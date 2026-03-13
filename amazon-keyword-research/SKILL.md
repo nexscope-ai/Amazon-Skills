@@ -1,6 +1,6 @@
 ---
 name: amazon-keyword-research
-description: "Amazon keyword research for sellers. Retrieve autocomplete suggestions (long-tail keywords), analyze competitor landscape, and assess market opportunity for any keyword on Amazon US/UK/DE/JP/CA/AU and 6 more marketplaces. No API key required. Use when: (1) researching Amazon product ideas or niches, (2) finding long-tail keyword opportunities from Amazon autocomplete, (3) analyzing keyword competition on Amazon (number of results, price range, ratings, top brands), (4) checking seasonal search trends for a product category, (5) comparing multiple Amazon keywords, (6) evaluating market entry difficulty for a keyword."
+description: "Amazon keyword research and market opportunity analysis for sellers. Retrieve autocomplete suggestions (long-tail keywords), analyze competitor landscape, and assess market opportunity for any keyword on 12 Amazon marketplaces (US/UK/DE/FR/IT/ES/JP/CA/AU/IN/MX/BR). No API key required. Make sure to use this skill whenever the user mentions Amazon product research, finding products to sell on Amazon, Amazon keyword ideas, niche analysis, competition analysis for Amazon, market opportunity on Amazon, comparing Amazon keywords, evaluating whether a product is worth selling, Amazon autocomplete data, seasonal demand for Amazon products, or anything related to researching what to sell on Amazon — even if they don't explicitly say 'keyword research'. Also trigger when the user asks vague questions like 'is this a good product to sell?', 'what's the competition like for X on Amazon?', 'should I sell X or Y?', or 'what are people searching for on Amazon?'."
 metadata: {"clawdbot":{"emoji":"🔍"}}
 ---
 
@@ -11,7 +11,7 @@ Free keyword research for Amazon sellers. No API key — works out of the box.
 ## Installation
 
 ```bash
-npx skills add nexscope-ai/amazon-keyword-research -g
+npx skills add nexscope-ai/Amazon-Skills --skill amazon-keyword-research -g
 ```
 
 ## Capabilities
@@ -71,6 +71,8 @@ Run the bundled script to collect Amazon autocomplete suggestions:
 - Expands with a-z suffixes: "[keyword] a", "[keyword] b", ... "[keyword] z"
 - Returns deduplicated, sorted list of real search suggestions — one per line
 
+**Why this matters:** Amazon autocomplete reflects what real shoppers are actually typing. These aren't guesses — they're demand signals directly from Amazon's search engine. The prefix and alphabet expansion catches long-tail terms that basic autocomplete misses, which are often lower competition and higher intent.
+
 Example:
 ```bash
 <skill>/scripts/research.sh "portable blender" us
@@ -87,6 +89,8 @@ Use `web_search` to gather competitor intelligence:
 2. Search `"<keyword>" amazon best sellers price review` — extract price patterns, rating averages, dominant brands
 3. Summarize: total competitors, price range (min/avg/max), average star rating, top 5 brands by visibility
 
+**Why this matters:** Raw keyword volume means nothing without competition context. A keyword with 10,000 searches but dominated by 3 entrenched brands with 10,000+ reviews each is a very different opportunity than one with the same volume but fragmented sellers. The price range reveals margin potential — if everything is under $10, margins will be razor-thin after FBA fees.
+
 ### Step 3: Check Seasonality
 
 Use `web_fetch` on Google Trends:
@@ -95,11 +99,20 @@ Use `web_fetch` on Google Trends:
 https://trends.google.com/trends/explore?q=<keyword>&geo=US
 ```
 
+If Google Trends returns a 429 error, fall back to `web_search` for seasonal data:
+```
+"<keyword>" seasonal trends demand peak months
+```
+
 Identify: trend direction (rising/declining/stable), seasonal peaks (which months), year-over-year change.
+
+**Why this matters:** Seasonality determines cash flow risk. A product that sells 80% of its volume in Q4 means you need capital for inventory months in advance and may sit on dead stock the rest of the year. Rising trends mean growing demand and more room for new entrants; declining trends mean you're fighting over a shrinking pie. This context turns a keyword from a number into a business decision.
 
 ### Step 4: Synthesize Report
 
 Combine all data into the output format below.
+
+**Why structure matters:** Grouping keywords by intent (commercial vs informational vs niche) helps the seller understand not just what people search, but why they search it. The opportunity score condenses multiple signals into a single actionable number, but the breakdown behind it is what actually informs the decision — so always show the reasoning.
 
 ## Output Format
 
