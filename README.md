@@ -1,6 +1,6 @@
 # 🔍 Amazon Skills by Nexscope
 
-Free AI agent skills for Amazon sellers — keyword research, competitor analysis, listing audit & more.
+Free AI agent skills for Amazon sellers — keyword research, listing optimization, competitor analysis & more.
 
 Works with **OpenClaw**, **Claude Code**, **Cursor**, **Windsurf**, **Codex**, and any agent that supports the [Skills format](https://skills.sh).
 
@@ -9,8 +9,8 @@ Works with **OpenClaw**, **Claude Code**, **Cursor**, **Windsurf**, **Codex**, a
 | Skill | Description | Status |
 |-------|-------------|--------|
 | [amazon-keyword-research](./amazon-keyword-research/) | Long-tail keyword mining from Amazon autocomplete, competition analysis, seasonality trends, and market opportunity scoring. 12 marketplaces supported. No API key needed. | ✅ Available |
+| [amazon-listing-optimization](./amazon-listing-optimization/) | Create keyword-optimized listings from scratch or audit existing ones. Supports keyword input, competitor ASIN analysis, 8-dimension scoring, and ready-to-use copy generation. 12 marketplaces. No API key needed. | ✅ Available |
 | amazon-competitor-radar | Monitor competitor pricing, BSR changes, and listing updates | 🔜 Coming soon |
-| amazon-listing-audit | Audit your listing for SEO, content quality, and conversion optimization | 🔜 Coming soon |
 | amazon-review-analyzer | Sentiment analysis and insight extraction from product reviews | 🔜 Coming soon |
 | amazon-niche-finder | Discover underserved niches with low competition and high demand | 🔜 Coming soon |
 | amazon-price-tracker | Track historical pricing patterns and identify pricing opportunities | 🔜 Coming soon |
@@ -27,6 +27,7 @@ npx skills add nexscope-ai/Amazon-Skills
 
 ```bash
 npx skills add nexscope-ai/Amazon-Skills --skill amazon-keyword-research
+npx skills add nexscope-ai/Amazon-Skills --skill amazon-listing-optimization
 ```
 
 ### Install globally (recommended)
@@ -44,11 +45,15 @@ Research the keyword "portable blender" on Amazon US
 ```
 
 ```
-Compare "yoga mat" vs "exercise mat" on Amazon — which has more opportunity?
+Create a listing for my dog t-shirt. Competitors: B0DJ5GMZHQ, B0CMD17929. 10 colors, 5 sizes, cotton. Friendly tone.
 ```
 
 ```
-Analyze "Küchenmesser" on Amazon Germany
+Audit the listing for ASIN B0B76519ZG on Amazon US
+```
+
+```
+Compare "yoga mat" vs "exercise mat" on Amazon — which has more opportunity?
 ```
 
 The agent will automatically use the right skill based on your request.
