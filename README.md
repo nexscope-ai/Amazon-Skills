@@ -27,6 +27,9 @@ npx skills add nexscope-ai/Amazon-Skills
 
 ```bash
 npx skills add nexscope-ai/Amazon-Skills --skill amazon-keyword-research
+```
+
+```bash
 npx skills add nexscope-ai/Amazon-Skills --skill amazon-listing-optimization
 ```
 
