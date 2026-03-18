@@ -1,5 +1,5 @@
 ---
-name: amazon-ppc
+name: amazon-ppc-campaign
 description: "Amazon PPC campaign builder and optimizer for sellers. Two modes: (A) Build — design a complete campaign structure from scratch with keyword groupings, bid calculations, and negative keyword lists, (B) Optimize — audit existing campaigns using search term reports, identify keyword funnel opportunities, calculate bid adjustments, and generate a week-by-week action plan. Integrates with amazon-keyword-research for keyword input. No API key required. Use when: (1) setting up Amazon PPC campaigns for a new product, (2) auditing existing campaign performance and ACoS, (3) optimizing keyword bids and negative keywords, (4) building Auto/Manual/Exact campaign structures, (5) analyzing search term reports for opportunities, (6) calculating break-even ACoS and target ACoS, (7) scaling profitable campaigns to Sponsored Brands or Display."
 metadata: {"clawdbot":{"emoji":"📢"}}
 ---

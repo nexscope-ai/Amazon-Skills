@@ -10,7 +10,7 @@ Works with **OpenClaw**, **Claude Code**, **Cursor**, **Windsurf**, **Codex**, a
 |-------|-------------|--------|
 | [amazon-keyword-research](./amazon-keyword-research/) | Long-tail keyword mining from Amazon autocomplete, competition analysis, seasonality trends, and market opportunity scoring. 12 marketplaces supported. No API key needed. | ✅ Available |
 | [amazon-listing-optimization](./amazon-listing-optimization/) | Create keyword-optimized listings from scratch or audit existing ones. Supports keyword input, competitor ASIN analysis, 8-dimension scoring, and ready-to-use copy generation. 12 marketplaces. No API key needed. | ✅ Available |
-| [amazon-ppc](./amazon-ppc/) | Build PPC campaign structures from scratch or optimize existing campaigns. Calculates ACoS targets, groups keywords by campaign type, sets bid strategies, and generates negative keyword lists. Output follows Seller Central hierarchy — ready to implement. Includes competitor ASIN extraction script. No API key needed. | ✅ Available |
+| [amazon-ppc-campaign](./amazon-ppc-campaign/) | Build PPC campaign structures from scratch or optimize existing campaigns. Calculates ACoS targets, groups keywords by campaign type, sets bid strategies, and generates negative keyword lists. Output follows Seller Central hierarchy — ready to implement. Includes competitor ASIN extraction script. No API key needed. | ✅ Available |
 | amazon-competitor-radar | Monitor competitor pricing, BSR changes, and listing updates | 🔜 Coming soon |
 | amazon-review-analyzer | Sentiment analysis and insight extraction from product reviews | 🔜 Coming soon |
 | amazon-niche-finder | Discover underserved niches with low competition and high demand | 🔜 Coming soon |
@@ -35,7 +35,7 @@ npx skills add nexscope-ai/Amazon-Skills --skill amazon-listing-optimization
 ```
 
 ```bash
-npx skills add nexscope-ai/Amazon-Skills --skill amazon-ppc
+npx skills add nexscope-ai/Amazon-Skills --skill amazon-ppc-campaign
 ```
 
 ### Install globally (recommended)
@@ -64,7 +64,7 @@ Create a listing for my dog t-shirt. Competitors: B0DJ5GMZHQ, B0CMD17929. 10 col
 Audit the listing for ASIN B0B76519ZG on Amazon US
 ```
 
-### 📢 amazon-ppc
+### 📢 amazon-ppc-campaign
 ```
 Build PPC campaigns for my product B0D72TSM62. Cost is $1.50, budget $50/day.
 ```
