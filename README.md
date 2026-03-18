@@ -46,33 +46,31 @@ npx skills add nexscope-ai/Amazon-Skills -g
 
 ## Usage
 
-Once installed, just ask your AI agent naturally:
+Once installed, just ask your AI agent naturally. The agent will automatically pick the right skill.
 
+### 🔍 amazon-keyword-research
 ```
 Research the keyword "portable blender" on Amazon US
 ```
-
-```
-Create a listing for my dog t-shirt. Competitors: B0DJ5GMZHQ, B0CMD17929. 10 colors, 5 sizes, cotton. Friendly tone.
-```
-
-```
-Audit the listing for ASIN B0B76519ZG on Amazon US
-```
-
-```
-Build PPC campaigns for my product B0D72TSM62. Cost is $1.50, budget $50/day.
-```
-
-```
-My PPC ACoS is 58% and target is 30%. Help me optimize my campaigns.
-```
-
 ```
 Compare "yoga mat" vs "exercise mat" on Amazon — which has more opportunity?
 ```
 
-The agent will automatically use the right skill based on your request.
+### 📝 amazon-listing-optimization
+```
+Create a listing for my dog t-shirt. Competitors: B0DJ5GMZHQ, B0CMD17929. 10 colors, 5 sizes, cotton. Friendly tone.
+```
+```
+Audit the listing for ASIN B0B76519ZG on Amazon US
+```
+
+### 📢 amazon-ppc
+```
+Build PPC campaigns for my product B0D72TSM62. Cost is $1.50, budget $50/day.
+```
+```
+My PPC ACoS is 58% and target is 30%. Help me optimize my campaigns.
+```
 
 ## Supported Marketplaces
 
