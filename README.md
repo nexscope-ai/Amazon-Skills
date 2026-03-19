@@ -96,7 +96,7 @@ Analyze the market size for "dog clothes" on Amazon US
 
 These skills use publicly available data — no API key, no paid subscription, no setup friction. Install and go.
 
-For advanced features like exact search volumes, sales estimates, and real-time BSR tracking, check out **[Nexscope](https://nexscope.ai)** — the AI command center for Amazon sellers.
+Want more? **[Nexscope](https://www.nexscope.ai/)** — your AI assistant for smarter e-commerce decisions. Research products, validate demand, spot trends, and get clear next steps in one conversation.
 
 ## License
 
@@ -104,4 +104,4 @@ MIT
 
 ---
 
-Built by **[Nexscope AI](https://github.com/nexscope-ai)** — Insights, Operations, and Marketing in one agent.
+Built by **[Nexscope](https://www.nexscope.ai/)** — research, validate, and act on e-commerce opportunities with AI.

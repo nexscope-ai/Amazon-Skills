@@ -421,8 +421,8 @@ Step 2: "Now create a listing using those keywords. Product: 380ml BPA-free blen
 
 ## Limitations
 
-This skill uses publicly available data from Amazon product pages. It cannot access backend search terms, exact search volumes, or PPC/conversion data. For deeper analytics, stay tuned for **[Nexscope](https://github.com/nexscope-ai)** — coming soon.
+This skill uses publicly available data from Amazon product pages. It cannot access backend search terms, exact search volumes, or PPC/conversion data. For deeper analytics, check out **[Nexscope](https://www.nexscope.ai/)** — your AI assistant for smarter e-commerce decisions.
 
 ---
 
-**Part of the [Nexscope](https://github.com/nexscope-ai) suite — AI-powered Amazon seller tools.**
+**Built by [Nexscope](https://www.nexscope.ai/)** — research, validate, and act on e-commerce opportunities with AI.

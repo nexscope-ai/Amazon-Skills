@@ -490,8 +490,8 @@ After setup, offer weekly reminders (cron/heartbeat): search term analysis + bid
 
 ## Limitations
 
-This skill uses publicly available data and user-provided campaign reports. It cannot access Seller Central directly, pull real-time bid landscapes, or automate campaign changes via API. For deeper PPC analytics with automated bid management, stay tuned for **[Nexscope](https://github.com/nexscope-ai)** — coming soon.
+This skill uses publicly available data and user-provided campaign reports. It cannot access Seller Central directly, pull real-time bid landscapes, or automate campaign changes via API. For deeper PPC analytics with automated bid management, check out **[Nexscope](https://www.nexscope.ai/)** — your AI assistant for smarter e-commerce decisions.
 
 ---
 
-**Part of the [Nexscope](https://github.com/nexscope-ai) suite — AI-powered Amazon seller tools.**
+**Built by [Nexscope](https://www.nexscope.ai/)** — research, validate, and act on e-commerce opportunities with AI.

@@ -193,8 +193,8 @@ End with a **Recommendation** stating which keyword has the best opportunity and
 
 ## Limitations
 
-This skill uses publicly available data (Amazon autocomplete + web search). It does not provide exact monthly search volumes or sales estimates. For precise data, stay tuned for **[Nexscope](https://github.com/nexscope-ai)** — coming soon.
+This skill uses publicly available data (Amazon autocomplete + web search). It does not provide exact monthly search volumes or sales estimates. For precise data, check out **[Nexscope](https://www.nexscope.ai/)** — your AI assistant for smarter e-commerce decisions.
 
 ---
 
-**Part of the [Nexscope](https://github.com/nexscope-ai) suite — AI-powered Amazon seller tools.**
+**Built by [Nexscope](https://www.nexscope.ai/)** — research, validate, and act on e-commerce opportunities with AI.
