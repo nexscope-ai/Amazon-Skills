@@ -1,7 +1,7 @@
 ---
 name: amazon-listing-optimization
 description: "Amazon listing builder and optimizer for sellers. Two modes: (A) Create — build keyword-optimized listings from scratch using keyword lists + product characteristics + AI copywriting, (B) Optimize — audit existing listings, find keyword gaps, score across 8 dimensions, and rewrite with missing keywords. Integrates with amazon-keyword-research for keyword input. Works on 12 Amazon marketplaces. No API key required. Use when: (1) creating a new Amazon listing from keywords, (2) auditing an existing listing for SEO and conversion, (3) checking keyword coverage in title/bullets/description, (4) generating listing copy with target keywords and tone, (5) comparing listings against competitors, (6) preparing a listing for launch or relaunch."
-metadata: {"clawdbot":{"emoji":"📝"}}
+metadata: {"nexscope":{"emoji":"📝","category":"amazon"}}
 ---
 
 # Amazon Listing Optimization 📝

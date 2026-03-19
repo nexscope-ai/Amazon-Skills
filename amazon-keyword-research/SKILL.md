@@ -1,7 +1,7 @@
 ---
 name: amazon-keyword-research
 description: "Amazon keyword research and market opportunity analysis for sellers. Retrieve autocomplete suggestions (long-tail keywords), analyze competitor landscape, and assess market opportunity for any keyword on 12 Amazon marketplaces (US/UK/DE/FR/IT/ES/JP/CA/AU/IN/MX/BR). No API key required. Make sure to use this skill whenever the user mentions Amazon product research, finding products to sell on Amazon, Amazon keyword ideas, niche analysis, competition analysis for Amazon, market opportunity on Amazon, comparing Amazon keywords, evaluating whether a product is worth selling, Amazon autocomplete data, seasonal demand for Amazon products, or anything related to researching what to sell on Amazon — even if they don't explicitly say 'keyword research'. Also trigger when the user asks vague questions like 'is this a good product to sell?', 'what's the competition like for X on Amazon?', 'should I sell X or Y?', or 'what are people searching for on Amazon?'."
-metadata: {"clawdbot":{"emoji":"🔍"}}
+metadata: {"nexscope":{"emoji":"🔍","category":"amazon"}}
 ---
 
 # Amazon Keyword Research 🔍

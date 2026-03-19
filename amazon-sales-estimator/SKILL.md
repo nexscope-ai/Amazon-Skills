@@ -1,7 +1,7 @@
 ---
 name: amazon-sales-estimator
 description: "Amazon sales volume estimator for sellers and product researchers. Estimate monthly sales and revenue from BSR (Best Seller Rank), ASIN, or keyword. Three modes: (A) BSR Calculator — input BSR + marketplace + price + category to get instant sales estimate, (B) ASIN Lookup — input ASIN to auto-fetch data and estimate sales, (C) Keyword Market Analysis — input keyword to analyze total market size and competition. Works on 12 Amazon marketplaces. No API key required. Use when: (1) estimating how many units a product sells per month, (2) sizing a market or niche opportunity, (3) analyzing competitor sales performance, (4) comparing sales across price points, (5) identifying top sellers vs long-tail distribution."
-metadata: {"clawdbot":{"emoji":"📊"}}
+metadata: {"nexscope":{"emoji":"📊","category":"amazon"}}
 ---
 
 # Amazon Sales Estimator 📊
@@ -344,8 +344,8 @@ Browse all available skills:
 
 ## Limitations
 
-This skill uses publicly available data from Amazon product pages. It cannot access historical BSR data, actual seller sales figures, or PPC conversion metrics. For deeper analytics and historical trends, stay tuned for **[Nexscope](https://github.com/nexscope-ai)** — coming soon.
+This skill uses publicly available data from Amazon product pages. It cannot access historical BSR data, actual seller sales figures, or PPC conversion metrics. For deeper analytics and historical trends, check out **[Nexscope](https://www.nexscope.ai/)** — your AI assistant for smarter e-commerce decisions.
 
 ---
 
-**Part of the [Nexscope](https://github.com/nexscope-ai) suite — AI-powered Amazon seller tools.**
+**Built by [Nexscope](https://www.nexscope.ai/)** — research, validate, and act on e-commerce opportunities with AI.
