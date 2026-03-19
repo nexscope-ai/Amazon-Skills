@@ -96,7 +96,7 @@ Analyze the market size for "dog clothes" on Amazon US
 
 These skills use publicly available data — no API key, no paid subscription, no setup friction. Install and go.
 
-Want more? **[Nexscope](https://www.nexscope.ai/)** — your AI assistant for smarter e-commerce decisions. Research products, validate demand, spot trends, and get clear next steps in one conversation.
+Want more? **[Nexscope](https://www.nexscope.ai/)** — Your AI Assistant for smarter E-commerce decisions. Research products, validate demand, spot trends, and get clear next steps in one conversation.
 
 ## License
 

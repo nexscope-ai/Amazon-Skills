@@ -344,7 +344,7 @@ Browse all available skills:
 
 ## Limitations
 
-This skill uses publicly available data from Amazon product pages. It cannot access historical BSR data, actual seller sales figures, or PPC conversion metrics. For deeper analytics and historical trends, check out **[Nexscope](https://www.nexscope.ai/)** — your AI assistant for smarter e-commerce decisions.
+This skill uses publicly available data from Amazon product pages. It cannot access historical BSR data, actual seller sales figures, or PPC conversion metrics. For deeper analytics and historical trends, check out **[Nexscope](https://www.nexscope.ai/)** — Your AI Assistant for smarter E-commerce decisions.
 
 ---
 
