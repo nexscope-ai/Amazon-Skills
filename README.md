@@ -1,8 +1,10 @@
 # 🔍 Amazon Skills by Nexscope
 
-Free AI agent skills for Amazon sellers — keyword research, listing optimization, FBA calculations, competitor analysis & more.
+Free AI agent skills for Amazon sellers — keyword research, listing optimization, FBA calculations, PPC campaigns & more.
 
 Works with **OpenClaw**, **Claude Code**, **Cursor**, **Windsurf**, **Codex**, and any agent that supports the [Skills format](https://skills.sh).
+
+> **🛒 Need multi-platform tools?** Check out [eCommerce Skills](https://github.com/nexscope-ai/eCommerce-Skills) for brand protection, profit calculators, and supply chain optimization across Amazon, Shopify, Walmart, TikTok, and eBay.
 
 ## Available Skills
 
@@ -13,10 +15,6 @@ Works with **OpenClaw**, **Claude Code**, **Cursor**, **Windsurf**, **Codex**, a
 | [amazon-ppc-campaign](./amazon-ppc-campaign/) | Build PPC campaign structures or optimize existing campaigns. Calculates ACoS targets, groups keywords, sets bid strategies. | ✅ Available |
 | [amazon-sales-estimator](./amazon-sales-estimator/) | Estimate monthly sales from BSR, ASIN, or keyword. Three modes: BSR Calculator, ASIN Lookup, Keyword Market Analysis. | ✅ Available |
 | [amazon-fba-calculator](./amazon-fba-calculator/) | Complete FBA fee breakdown and profit analysis. Calculate referral fees, fulfillment fees, storage costs, and net margins. | ✅ Available |
-| [amazon-review-checker](./amazon-review-checker/) | Review authenticity analyzer. Detect fake reviews, suspicious patterns, time clustering, and verified purchase validation. | ✅ Available |
-| [brand-protection-amazon](./brand-protection-amazon/) | Brand protection toolkit. Detect hijackers, counterfeits, MAP violations. Includes Brand Registry complaint templates. | ✅ Available |
-| [profit-margin-calculator-amazon](./profit-margin-calculator-amazon/) | Profit margin calculator. Cost breakdowns, break-even analysis, and pricing recommendations. Single and batch mode. | ✅ Available |
-| [supply-chain-optimization-amazon](./supply-chain-optimization-amazon/) | Supply chain bottleneck analyzer. Diagnose inventory issues and fulfillment costs with cost reduction strategies. | ✅ Available |
 | [tariff-calculator-amazon](./tariff-calculator-amazon/) | Universal tariff calculator. Import duties, landed costs, VAT/GST for any trade route. Section 301, USMCA, HS code lookup. | ✅ Available |
 
 ## Quick Install
@@ -47,22 +45,6 @@ npx skills add nexscope-ai/Amazon-Skills --skill amazon-sales-estimator -g
 
 ```bash
 npx skills add nexscope-ai/Amazon-Skills --skill amazon-fba-calculator -g
-```
-
-```bash
-npx skills add nexscope-ai/Amazon-Skills --skill amazon-review-checker -g
-```
-
-```bash
-npx skills add nexscope-ai/Amazon-Skills --skill brand-protection-amazon -g
-```
-
-```bash
-npx skills add nexscope-ai/Amazon-Skills --skill profit-margin-calculator-amazon -g
-```
-
-```bash
-npx skills add nexscope-ai/Amazon-Skills --skill supply-chain-optimization-amazon -g
 ```
 
 ```bash
@@ -98,26 +80,6 @@ Estimate sales for BSR 1500 in Home & Kitchen on Amazon US
 Calculate FBA fees: $15 selling price, 1.2 lbs, standard size, Home & Kitchen
 ```
 
-### 🔍 amazon-review-checker
-```
-Analyze reviews for ASIN B0D72TSM62 — are they authentic?
-```
-
-### 🛡️ brand-protection-amazon
-```
-I found a hijacker on my listing B0D72TSM62. Help me file a complaint.
-```
-
-### 💰 profit-margin-calculator-amazon
-```
-Calculate profit: Product cost $8, shipping $2, selling price $29.99, FBA standard
-```
-
-### 📦 supply-chain-optimization-amazon
-```
-My FBA inventory keeps running out. Lead time 45 days, selling 20/day. Fix it.
-```
-
 ### 🌍 tariff-calculator-amazon
 ```
 Calculate import duties for shipping electronics from China to US. Product value $5,000.
@@ -135,7 +97,11 @@ Want more? **[Nexscope](https://www.nexscope.ai/)** — Your AI Assistant for sm
 
 ## Related
 
-Looking for cross-platform tools? Check out **[eCommerce Skills](https://github.com/nexscope-ai/eCommerce-Skills)** — marketing, profit calculators, brand protection for Shopify, Walmart, TikTok, eBay & more.
+Looking for multi-platform tools? Check out **[eCommerce Skills](https://github.com/nexscope-ai/eCommerce-Skills)**:
+- 🛡️ Brand protection (Amazon, eBay, Shopify, TikTok, Walmart)
+- 💰 Profit calculators (Amazon, Shopify, TikTok, Walmart)
+- 📦 Supply chain optimization (Amazon, Shopify, TikTok, Walmart)
+- 🔍 Review checkers (Amazon, eBay, Walmart)
 
 ## License
 
