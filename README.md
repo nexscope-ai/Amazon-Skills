@@ -1,3 +1,5 @@
+![Amazon Skills Banner](./banner.png)
+
 # 🔍 Amazon Skills by Nexscope
 
 [![GitHub stars](https://img.shields.io/github/stars/nexscope-ai/Amazon-Skills?style=social)](https://github.com/nexscope-ai/Amazon-Skills)
