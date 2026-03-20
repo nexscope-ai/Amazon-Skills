@@ -1,5 +1,9 @@
 # 🔍 Amazon Skills by Nexscope
 
+[![GitHub stars](https://img.shields.io/github/stars/nexscope-ai/Amazon-Skills?style=social)](https://github.com/nexscope-ai/Amazon-Skills)
+
+> ⭐ If you find these skills useful, please star the repo — it helps others discover it!
+
 Free AI agent skills for Amazon sellers — keyword research, listing optimization, FBA calculations, PPC campaigns & more.
 
 Works with **OpenClaw**, **Claude Code**, **Cursor**, **Windsurf**, **Codex**, and any agent that supports the [Skills format](https://skills.sh).
