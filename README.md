@@ -50,12 +50,14 @@ Works with **OpenClaw**, **Claude Code**, **Cursor**, **Windsurf**, **Codex**, a
 
 ---
 
-### 💰 Pricing & Deals
+### 💰 Pricing & Profitability
 
 | Skill | Description | Status |
 |-------|-------------|--------|
 | [amazon-fba-calculator](./amazon-fba-calculator/) | Complete FBA fee breakdown and profit analysis. Calculate referral fees, fulfillment fees, storage costs, and net margins. | ✅ Available |
 | [tariff-calculator-amazon](./tariff-calculator-amazon/) | Universal tariff calculator. Import duties, landed costs, VAT/GST for any trade route. | ✅ Available |
+| [amazon-profit-analyzer](./amazon-profit-analyzer/) | Comprehensive profit analysis — revenue waterfall, hidden fees, ACoS impact, return costs, optimization. | 🔶 Beta |
+| [amazon-repricing-strategy](./amazon-repricing-strategy/) | Repricing strategy — Buy Box optimization, pricing rules, margin protection, tool selection. | 🔶 Beta |
 | [amazon-buy-box](./amazon-buy-box/) | Buy Box strategy — eligibility factors, competitive pricing, FBA vs FBM impact. | 🔶 Beta |
 | [amazon-deal-finder](./amazon-deal-finder/) | Deal planning — Lightning Deals, Best Deals, Coupons, Prime Exclusive, ROI calculator. | 🔶 Beta |
 | [amazon-shipping-calculator](./amazon-shipping-calculator/) | FBA/FBM shipping and fulfillment cost calculation — dimensional weight, storage, removal. | 🔶 Beta |
@@ -73,12 +75,14 @@ Works with **OpenClaw**, **Claude Code**, **Cursor**, **Windsurf**, **Codex**, a
 
 ---
 
-### 📊 Analytics & Operations
+### 📊 Analytics & Monitoring
 
 | Skill | Description | Status |
 |-------|-------------|--------|
 | [amazon-sales-estimator](./amazon-sales-estimator/) | Estimate monthly sales from BSR, ASIN, or keyword. Three modes: BSR Calculator, ASIN Lookup, Keyword Market Analysis. | ✅ Available |
 | [amazon-rank-tracker](./amazon-rank-tracker/) | Keyword rank tracking — ranking factors, change diagnosis, improvement strategy. | 🔶 Beta |
+| [amazon-keyword-tracker](./amazon-keyword-tracker/) | Keyword rank monitoring — position tracking, SERP changes, competitor movement alerts. | 🔶 Beta |
+| [amazon-price-tracker](./amazon-price-tracker/) | Price monitoring — competitor pricing changes, Buy Box history, promotion detection. | 🔶 Beta |
 | [amazon-product-photography](./amazon-product-photography/) | Product photography planning — shot lists, infographics, lifestyle scenes, image optimization. | 🔶 Beta |
 
 ---
@@ -99,11 +103,11 @@ Works with **OpenClaw**, **Claude Code**, **Cursor**, **Windsurf**, **Codex**, a
 | 🔍 Product Research & Keywords | 1 | 4 | 5 |
 | 📝 Listing Optimization | 1 | 4 | 5 |
 | 🕵️ Competitor Analysis | 0 | 3 | 3 |
-| 💰 Pricing & Deals | 2 | 3 | 5 |
+| 💰 Pricing & Profitability | 2 | 5 | 7 |
 | 📢 Advertising | 1 | 3 | 4 |
-| 📊 Analytics & Operations | 1 | 2 | 3 |
+| 📊 Analytics & Monitoring | 1 | 4 | 5 |
 | 🚀 Growth & Expansion | 0 | 2 | 2 |
-| **Total** | **6** | **21** | **27** |
+| **Total** | **6** | **25** | **31** |
 
 ## Quick Install
 
