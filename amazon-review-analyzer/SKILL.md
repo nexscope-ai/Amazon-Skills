@@ -18,7 +18,7 @@ Built by [Nexscope](https://www.nexscope.ai/?co-from=skill) — your AI assistan
 ## Install
 
 ```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill amazon-review-analyzer -g
+npx skills add nexscope-ai/Amazon-Skills --skill amazon-review-analyzer -g
 ```
 
 ## Usage
