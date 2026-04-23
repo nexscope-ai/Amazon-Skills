@@ -52,16 +52,25 @@ Install a skill, ask your AI assistant a question about your Amazon business, an
 
 ---
 
-## ⭐ Most Popular (by downloads)
+## ⭐ Most Popular
 
-| Skill | What it does | Install |
-|-------|-------------|---------|
-| **[amazon-keyword-research](https://www.nexscope.ai/skillhub/skill/amazon-keyword-research?co-from=github)** | Long-tail keyword mining from Amazon autocomplete across 12 marketplaces | `npx skills add nexscope-ai/Amazon-Skills --skill amazon-keyword-research -g` |
-| **[amazon-listing-optimization](https://www.nexscope.ai/skillhub/skill/amazon-listing-optimization?co-from=github)** | Create or audit listings with competitor ASIN analysis and 8-dimension scoring | `npx skills add nexscope-ai/Amazon-Skills --skill amazon-listing-optimization -g` |
-| **[amazon-fba-calculator](https://www.nexscope.ai/skillhub/skill/amazon-fba-calculator?co-from=github)** | Complete FBA fee breakdown — referral fees, fulfillment, storage, net margins | `npx skills add nexscope-ai/Amazon-Skills --skill amazon-fba-calculator -g` |
-| **[amazon-ppc-campaign](https://www.nexscope.ai/skillhub/skill/amazon-ppc-campaign?co-from=github)** | Build PPC campaign structures, calculate ACoS targets, set bid strategies | `npx skills add nexscope-ai/Amazon-Skills --skill amazon-ppc-campaign -g` |
-| **[amazon-sales-estimator](https://www.nexscope.ai/skillhub/skill/amazon-sales-estimator?co-from=github)** | Estimate monthly sales from BSR, ASIN, or keyword across any category | `npx skills add nexscope-ai/Amazon-Skills --skill amazon-sales-estimator -g` |
-| **[tariff-calculator-amazon](https://www.nexscope.ai/skillhub/skill/tariff-calculator-amazon?co-from=github)** | Import duties, landed costs, VAT/GST for any trade route | `npx skills add nexscope-ai/Amazon-Skills --skill tariff-calculator-amazon -g` |
+🔍 **[Amazon Keyword Research](https://www.nexscope.ai/skillhub/skill/amazon-keyword-research?co-from=github)**
+Long-tail keyword mining from Amazon autocomplete — competition analysis, seasonality trends, opportunity scoring across 12 marketplaces.
+
+📝 **[Listing Optimization](https://www.nexscope.ai/skillhub/skill/amazon-listing-optimization?co-from=github)**
+Create keyword-optimized listings from scratch or audit existing ones with competitor ASIN analysis and 8-dimension scoring.
+
+💰 **[FBA Calculator](https://www.nexscope.ai/skillhub/skill/amazon-fba-calculator?co-from=github)**
+Complete FBA fee breakdown — referral fees, fulfillment fees, storage costs, net margin analysis.
+
+📢 **[PPC Campaign Builder](https://www.nexscope.ai/skillhub/skill/amazon-ppc-campaign?co-from=github)**
+Build PPC campaign structures, calculate ACoS targets, group keywords, and set bid strategies.
+
+📊 **[Sales Estimator](https://www.nexscope.ai/skillhub/skill/amazon-sales-estimator?co-from=github)**
+Estimate monthly sales from BSR, ASIN, or keyword — works across any Amazon category.
+
+🌍 **[Tariff Calculator](https://www.nexscope.ai/skillhub/skill/tariff-calculator-amazon?co-from=github)**
+Import duties, landed costs, VAT/GST calculation for any international trade route.
 
 > **🛒 Need multi-platform tools?** See [eCommerce Skills](https://github.com/nexscope-ai/eCommerce-Skills) — 142 skills for Amazon, Shopify, eBay, Etsy, TikTok Shop & Walmart.
 
@@ -81,13 +90,13 @@ Install a skill, ask your AI assistant a question about your Amazon business, an
 
 | Skill | Description | Status |
 |-------|-------------|--------|
-| [amazon-fba-calculator](https://www.nexscope.ai/skillhub/skill/amazon-fba-calculator?co-from=github) | Complete FBA fee breakdown and profit analysis. Calculate referral fees, fulfillment fees, storage costs, and net margins. | ✅ Available |
-| [tariff-calculator-amazon](https://www.nexscope.ai/skillhub/skill/tariff-calculator-amazon?co-from=github) | Universal tariff calculator. Import duties, landed costs, VAT/GST for any trade route. | ✅ Available |
-| amazon-profit-analyzer | Comprehensive profit analysis — revenue waterfall, hidden fees, ACoS impact, return costs, optimization. | 🔶 Beta |
-| amazon-repricing-strategy | Repricing strategy — Buy Box optimization, pricing rules, margin protection, tool selection. | 🔶 Beta |
-| amazon-buy-box | Buy Box strategy — eligibility factors, competitive pricing, FBA vs FBM impact. | 🔶 Beta |
-| amazon-deal-finder | Deal planning — Lightning Deals, Best Deals, Coupons, Prime Exclusive, ROI calculator. | 🔶 Beta |
-| amazon-shipping-calculator | FBA/FBM shipping and fulfillment cost calculation — dimensional weight, storage, removal. | 🔶 Beta |
+| [amazon-fba-calculator](https://github.com/nexscope-ai/Amazon-Skills/tree/main/amazon-fba-calculator) | Complete FBA fee breakdown and profit analysis. Calculate referral fees, fulfillment fees, storage costs, and net margins. | ✅ Available |
+| [tariff-calculator-amazon](https://github.com/nexscope-ai/Amazon-Skills/tree/main/tariff-calculator-amazon) | Universal tariff calculator. Import duties, landed costs, VAT/GST for any trade route. | ✅ Available |
+| [amazon-profit-analyzer](https://github.com/nexscope-ai/Amazon-Skills/tree/main/amazon-profit-analyzer) | Comprehensive profit analysis — revenue waterfall, hidden fees, ACoS impact, return costs, optimization. | 🔶 Beta |
+| [amazon-repricing-strategy](https://github.com/nexscope-ai/Amazon-Skills/tree/main/amazon-repricing-strategy) | Repricing strategy — Buy Box optimization, pricing rules, margin protection, tool selection. | 🔶 Beta |
+| [amazon-buy-box](https://github.com/nexscope-ai/Amazon-Skills/tree/main/amazon-buy-box) | Buy Box strategy — eligibility factors, competitive pricing, FBA vs FBM impact. | 🔶 Beta |
+| [amazon-deal-finder](https://github.com/nexscope-ai/Amazon-Skills/tree/main/amazon-deal-finder) | Deal planning — Lightning Deals, Best Deals, Coupons, Prime Exclusive, ROI calculator. | 🔶 Beta |
+| [amazon-shipping-calculator](https://github.com/nexscope-ai/Amazon-Skills/tree/main/amazon-shipping-calculator) | FBA/FBM shipping and fulfillment cost calculation — dimensional weight, storage, removal. | 🔶 Beta |
 
 ---
 
@@ -95,10 +104,10 @@ Install a skill, ask your AI assistant a question about your Amazon business, an
 
 | Skill | Description | Status |
 |-------|-------------|--------|
-| [amazon-ppc-campaign](https://www.nexscope.ai/skillhub/skill/amazon-ppc-campaign?co-from=github) | Build PPC campaign structures or optimize existing campaigns. Calculates ACoS targets, groups keywords, sets bid strategies. | ✅ Available |
-| amazon-advertising-strategy | Comprehensive ad strategy — SP + SB + SD, budget allocation, ACoS optimization. | 🔶 Beta |
-| amazon-negative-keywords | Negative keyword management — search term analysis, waste reduction, savings estimation. | 🔶 Beta |
-| amazon-display-ads | Sponsored Display campaigns — audience targeting, retargeting, creative optimization. | 🔶 Beta |
+| [amazon-ppc-campaign](https://github.com/nexscope-ai/Amazon-Skills/tree/main/amazon-ppc-campaign) | Build PPC campaign structures or optimize existing campaigns. Calculates ACoS targets, groups keywords, sets bid strategies. | ✅ Available |
+| [amazon-advertising-strategy](https://github.com/nexscope-ai/Amazon-Skills/tree/main/amazon-advertising-strategy) | Comprehensive ad strategy — SP + SB + SD, budget allocation, ACoS optimization. | 🔶 Beta |
+| [amazon-negative-keywords](https://github.com/nexscope-ai/Amazon-Skills/tree/main/amazon-negative-keywords) | Negative keyword management — search term analysis, waste reduction, savings estimation. | 🔶 Beta |
+| [amazon-display-ads](https://github.com/nexscope-ai/Amazon-Skills/tree/main/amazon-display-ads) | Sponsored Display campaigns — audience targeting, retargeting, creative optimization. | 🔶 Beta |
 
 ---
 
@@ -106,11 +115,11 @@ Install a skill, ask your AI assistant a question about your Amazon business, an
 
 | Skill | Description | Status |
 |-------|-------------|--------|
-| [amazon-listing-optimization](https://www.nexscope.ai/skillhub/skill/amazon-listing-optimization?co-from=github) | Create keyword-optimized listings from scratch or audit existing ones. Supports competitor ASIN analysis and 8-dimension scoring. | ✅ Available |
-| amazon-a-plus-content | A+ Content planning — module layouts, persuasive copy, comparison charts, image briefs. | 🔶 Beta |
-| amazon-backend-keywords | Backend search term optimization — 250-byte limit, deduplication, prioritization. | 🔶 Beta |
-| amazon-search-optimization | Amazon search ranking optimization — A9 algorithm factors, indexing, rank improvement. | 🔶 Beta |
-| amazon-listing-images | Product listing image planning — shot lists, infographics, lifestyle scenes, mobile optimization. | 🔶 Beta |
+| [amazon-listing-optimization](https://github.com/nexscope-ai/Amazon-Skills/tree/main/amazon-listing-optimization) | Create keyword-optimized listings from scratch or audit existing ones. Supports competitor ASIN analysis and 8-dimension scoring. | ✅ Available |
+| [amazon-a-plus-content](https://github.com/nexscope-ai/Amazon-Skills/tree/main/amazon-a-plus-content) | A+ Content planning — module layouts, persuasive copy, comparison charts, image briefs. | 🔶 Beta |
+| [amazon-backend-keywords](https://github.com/nexscope-ai/Amazon-Skills/tree/main/amazon-backend-keywords) | Backend search term optimization — 250-byte limit, deduplication, prioritization. | 🔶 Beta |
+| [amazon-search-optimization](https://github.com/nexscope-ai/Amazon-Skills/tree/main/amazon-search-optimization) | Amazon search ranking optimization — A9 algorithm factors, indexing, rank improvement. | 🔶 Beta |
+| [amazon-listing-images](https://github.com/nexscope-ai/Amazon-Skills/tree/main/amazon-listing-images) | Product listing image planning — shot lists, infographics, lifestyle scenes, mobile optimization. | 🔶 Beta |
 
 ---
 
@@ -118,11 +127,11 @@ Install a skill, ask your AI assistant a question about your Amazon business, an
 
 | Skill | Description | Status |
 |-------|-------------|--------|
-| [amazon-keyword-research](https://www.nexscope.ai/skillhub/skill/amazon-keyword-research?co-from=github) | Long-tail keyword mining from Amazon autocomplete, competition analysis, seasonality trends, and market opportunity scoring. 12 marketplaces. | ✅ Available |
-| amazon-trending-products | Trending products and rising categories — BSR patterns, seasonal trends, emerging niches. | 🔶 Beta |
-| amazon-product-research | Product research and opportunity analysis — demand, competition, profit potential, entry barriers. | 🔶 Beta |
-| amazon-niche-finder | Profitable niche discovery — demand, competition, margins, growth potential scoring. | 🔶 Beta |
-| amazon-seller-analytics | Seller storefront analysis — revenue estimation, product portfolio, growth trajectory. | 🔶 Beta |
+| [amazon-keyword-research](https://github.com/nexscope-ai/Amazon-Skills/tree/main/amazon-keyword-research) | Long-tail keyword mining from Amazon autocomplete, competition analysis, seasonality trends, and market opportunity scoring. 12 marketplaces. | ✅ Available |
+| [amazon-trending-products](https://github.com/nexscope-ai/Amazon-Skills/tree/main/amazon-trending-products) | Trending products and rising categories — BSR patterns, seasonal trends, emerging niches. | 🔶 Beta |
+| [amazon-product-research](https://github.com/nexscope-ai/Amazon-Skills/tree/main/amazon-product-research) | Product research and opportunity analysis — demand, competition, profit potential, entry barriers. | 🔶 Beta |
+| [amazon-niche-finder](https://github.com/nexscope-ai/Amazon-Skills/tree/main/amazon-niche-finder) | Profitable niche discovery — demand, competition, margins, growth potential scoring. | 🔶 Beta |
+| [amazon-seller-analytics](https://github.com/nexscope-ai/Amazon-Skills/tree/main/amazon-seller-analytics) | Seller storefront analysis — revenue estimation, product portfolio, growth trajectory. | 🔶 Beta |
 
 ---
 
@@ -130,11 +139,11 @@ Install a skill, ask your AI assistant a question about your Amazon business, an
 
 | Skill | Description | Status |
 |-------|-------------|--------|
-| [amazon-sales-estimator](https://www.nexscope.ai/skillhub/skill/amazon-sales-estimator?co-from=github) | Estimate monthly sales from BSR, ASIN, or keyword. Three modes: BSR Calculator, ASIN Lookup, Keyword Market Analysis. | ✅ Available |
-| amazon-rank-tracker | Keyword rank tracking — ranking factors, change diagnosis, improvement strategy. | 🔶 Beta |
-| amazon-keyword-tracker | Keyword rank monitoring — position tracking, SERP changes, competitor movement alerts. | 🔶 Beta |
-| amazon-price-tracker | Price monitoring — competitor pricing changes, Buy Box history, promotion detection. | 🔶 Beta |
-| amazon-product-photography | Product photography planning — shot lists, infographics, lifestyle scenes, image optimization. | 🔶 Beta |
+| [amazon-sales-estimator](https://github.com/nexscope-ai/Amazon-Skills/tree/main/amazon-sales-estimator) | Estimate monthly sales from BSR, ASIN, or keyword. Three modes: BSR Calculator, ASIN Lookup, Keyword Market Analysis. | ✅ Available |
+| [amazon-rank-tracker](https://github.com/nexscope-ai/Amazon-Skills/tree/main/amazon-rank-tracker) | Keyword rank tracking — ranking factors, change diagnosis, improvement strategy. | 🔶 Beta |
+| [amazon-keyword-tracker](https://github.com/nexscope-ai/Amazon-Skills/tree/main/amazon-keyword-tracker) | Keyword rank monitoring — position tracking, SERP changes, competitor movement alerts. | 🔶 Beta |
+| [amazon-price-tracker](https://github.com/nexscope-ai/Amazon-Skills/tree/main/amazon-price-tracker) | Price monitoring — competitor pricing changes, Buy Box history, promotion detection. | 🔶 Beta |
+| [amazon-product-photography](https://github.com/nexscope-ai/Amazon-Skills/tree/main/amazon-product-photography) | Product photography planning — shot lists, infographics, lifestyle scenes, image optimization. | 🔶 Beta |
 
 ---
 
@@ -142,9 +151,9 @@ Install a skill, ask your AI assistant a question about your Amazon business, an
 
 | Skill | Description | Status |
 |-------|-------------|--------|
-| amazon-competitor-analysis | Full-spectrum competitor analysis — listings, pricing, reviews, ads, positioning. | 🔶 Beta |
-| amazon-brand-analytics | Brand Analytics interpretation — SFR, click share, conversion share, market basket. | 🔶 Beta |
-| amazon-review-analyzer | Deep review analysis — sentiment, complaints, feature requests, competitive insights. | 🔶 Beta |
+| [amazon-competitor-analysis](https://github.com/nexscope-ai/Amazon-Skills/tree/main/amazon-competitor-analysis) | Full-spectrum competitor analysis — listings, pricing, reviews, ads, positioning. | 🔶 Beta |
+| [amazon-brand-analytics](https://github.com/nexscope-ai/Amazon-Skills/tree/main/amazon-brand-analytics) | Brand Analytics interpretation — SFR, click share, conversion share, market basket. | 🔶 Beta |
+| [amazon-review-analyzer](https://github.com/nexscope-ai/Amazon-Skills/tree/main/amazon-review-analyzer) | Deep review analysis — sentiment, complaints, feature requests, competitive insights. | 🔶 Beta |
 
 ---
 
@@ -152,8 +161,8 @@ Install a skill, ask your AI assistant a question about your Amazon business, an
 
 | Skill | Description | Status |
 |-------|-------------|--------|
-| amazon-global-selling | International marketplace expansion — EU, UK, Japan, regulatory, logistics, localization. | 🔶 Beta |
-| amazon-fba-prep | FBA prep guide — labeling, packaging, shipment planning, rejection prevention. | 🔶 Beta |
+| [amazon-global-selling](https://github.com/nexscope-ai/Amazon-Skills/tree/main/amazon-global-selling) | International marketplace expansion — EU, UK, Japan, regulatory, logistics, localization. | 🔶 Beta |
+| [amazon-fba-prep](https://github.com/nexscope-ai/Amazon-Skills/tree/main/amazon-fba-prep) | FBA prep guide — labeling, packaging, shipment planning, rejection prevention. | 🔶 Beta |
 
 ---
 
