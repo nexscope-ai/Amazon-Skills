@@ -4,11 +4,11 @@
 
 # Amazon Skills by Nexscope
 
-**51 free AI agent skills built for Amazon sellers — keyword research, listing optimization, FBA calculations, PPC campaigns & more.**
+**53 free AI agent skills built for Amazon sellers — keyword research, listing optimization, FBA calculations, PPC campaigns & more.**
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![GitHub stars](https://img.shields.io/github/stars/nexscope-ai/Amazon-Skills?style=social)](https://github.com/nexscope-ai/Amazon-Skills)
-![Skill Count](https://img.shields.io/badge/skills-51-10b981?style=flat)
+![Skill Count](https://img.shields.io/badge/skills-53-10b981?style=flat)
 ![Downloads](https://img.shields.io/badge/downloads-12K+-orange?style=flat)
 [![Discord](https://img.shields.io/badge/Discord-Join%20us-5865F2?logo=discord&logoColor=white)](https://discord.com/invite/t7dfcMTmkH)
 
@@ -20,7 +20,7 @@ Works with **OpenClaw** · **Claude Code** · **Cursor** · **Windsurf** · **Co
 
 ## Quick Start
 
-Install all 51 skills at once:
+Install all 53 skills at once:
 
 ```bash
 npx skills add nexscope-ai/Amazon-Skills -g
@@ -147,12 +147,13 @@ Import duties, landed costs, VAT/GST calculation for any international trade rou
 
 ---
 
-### 🕵️ Competitor Analysis (3 skills)
+### 🕵️ Competitor Analysis (5 skills)
 
 | Skill | Description | Status |
 |-------|-------------|--------|
+| [amazon-competitor-monitoring](./amazon-competitor-monitoring) | Real-time competitor tracking — pricing changes, inventory alerts, new launches, review velocity, ad patterns. | ✅ Available |
+| [amazon-brand-analytics](./amazon-brand-analytics) | Brand Analytics interpretation — SFR analysis, Market Basket insights, Item Comparison positioning strategies. | ✅ Available |
 | [amazon-competitor-analysis](./amazon-competitor-analysis) | Full-spectrum competitor analysis — listings, pricing, reviews, ads, positioning. | 🔶 Beta |
-| [amazon-brand-analytics](./amazon-brand-analytics) | Brand Analytics interpretation — SFR, click share, conversion share, market basket. | 🔶 Beta |
 | [amazon-review-analyzer](./amazon-review-analyzer) | Deep review analysis — sentiment, complaints, feature requests, competitive insights. | 🔶 Beta |
 
 ---
