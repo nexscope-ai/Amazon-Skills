@@ -128,10 +128,10 @@ Import duties, landed costs, VAT/GST calculation for any international trade rou
 | Skill | Description | Status |
 |-------|-------------|--------|
 | [amazon-keyword-research](./amazon-keyword-research) | Long-tail keyword mining from Amazon autocomplete, competition analysis, seasonality trends, and market opportunity scoring. 12 marketplaces. | ✅ Available |
-| [amazon-trending-products](./amazon-trending-products) | Trending products and rising categories — BSR patterns, seasonal trends, emerging niches. | 🔶 Beta |
-| [amazon-product-research](./amazon-product-research) | Product research and opportunity analysis — demand, competition, profit potential, entry barriers. | 🔶 Beta |
-| [amazon-niche-finder](./amazon-niche-finder) | Profitable niche discovery — demand, competition, margins, growth potential scoring. | 🔶 Beta |
-| [amazon-seller-analytics](./amazon-seller-analytics) | Seller storefront analysis — revenue estimation, product portfolio, growth trajectory. | 🔶 Beta |
+| [amazon-trending-products](./amazon-trending-products) | Trending products and rising categories — BSR patterns, seasonal trends, emerging niches. | ✅ Available |
+| [amazon-product-research](./amazon-product-research) | Product research and opportunity analysis — demand, competition, profit potential, entry barriers. | ✅ Available |
+| [amazon-niche-finder](./amazon-niche-finder) | Profitable niche discovery — demand, competition, margins, growth potential scoring. | ✅ Available |
+| [amazon-seller-analytics](./amazon-seller-analytics) | Seller storefront analysis — revenue estimation, product portfolio, growth trajectory. | ✅ Available |
 
 ---
 
