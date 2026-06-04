@@ -86,6 +86,18 @@ Import duties, landed costs, VAT/GST calculation for any international trade rou
 
 **Status key:** ✅ Available (production-ready) · 🔶 Beta (functional, being improved)
 
+### 🔍 Product Research & Keywords (5 skills)
+
+| Skill | Description | Status |
+|-------|-------------|--------|
+| [amazon-keyword-research](./amazon-keyword-research) | Long-tail keyword mining from Amazon autocomplete, competition analysis, seasonality trends, and market opportunity scoring. 12 marketplaces. | ✅ Available |
+| [amazon-trending-products](./amazon-trending-products) | Trending products and rising categories — BSR patterns, seasonal trends, emerging niches. | ✅ Available |
+| [amazon-product-research](./amazon-product-research) | Product research and opportunity analysis — demand, competition, profit potential, entry barriers. | ✅ Available |
+| [amazon-niche-finder](./amazon-niche-finder) | Profitable niche discovery — demand, competition, margins, growth potential scoring. | ✅ Available |
+| [amazon-seller-analytics](./amazon-seller-analytics) | Seller storefront analysis — revenue estimation, product portfolio, growth trajectory. | ✅ Available |
+
+---
+
 ### 💰 Pricing & Profitability (7 skills)
 
 | Skill | Description | Status |
@@ -120,20 +132,6 @@ Import duties, landed costs, VAT/GST calculation for any international trade rou
 | [amazon-backend-keywords](./amazon-backend-keywords) | Backend search term optimization — 250-byte limit, deduplication, prioritization. | 🔶 Beta |
 | [amazon-search-optimization](./amazon-search-optimization) | Amazon search ranking optimization — A9 algorithm factors, indexing, rank improvement. | 🔶 Beta |
 | [amazon-listing-images](./amazon-listing-images) | Product listing image planning — shot lists, infographics, lifestyle scenes, mobile optimization. | 🔶 Beta |
-
----
-
-### 🔍 Product Research & Keywords (5 skills)
-
-| Skill | Description | Status |
-|-------|-------------|--------|
-| [amazon-keyword-research](./amazon-keyword-research) | Long-tail keyword mining from Amazon autocomplete, competition analysis, seasonality trends, and market opportunity scoring. 12 marketplaces. | ✅ Available |
-| [amazon-trending-products](./amazon-trending-products) | Trending products and rising categories — BSR patterns, seasonal trends, emerging niches. | ✅ Available |
-| [amazon-product-research](./amazon-product-research) | Product research and opportunity analysis — demand, competition, profit potential, entry barriers. | ✅ Available |
-| [amazon-niche-finder](./amazon-niche-finder) | Profitable niche discovery — demand, competition, margins, growth potential scoring. | ✅ Available |
-| [amazon-seller-analytics](./amazon-seller-analytics) | Seller storefront analysis — revenue estimation, product portfolio, growth trajectory. | ✅ Available |
-
----
 
 ### 📊 Analytics & Monitoring (5 skills)
 
