@@ -151,8 +151,8 @@ Import duties, landed costs, VAT/GST calculation for any international trade rou
 |-------|-------------|--------|
 | [amazon-competitor-monitoring](./amazon-competitor-monitoring) | Real-time competitor tracking — pricing changes, inventory alerts, new launches, review velocity, ad patterns. | ✅ Available |
 | [amazon-brand-analytics](./amazon-brand-analytics) | Brand Analytics interpretation — SFR analysis, Market Basket insights, Item Comparison positioning strategies. | ✅ Available |
-| [amazon-competitor-analysis](./amazon-competitor-analysis) | Full-spectrum competitor analysis — listings, pricing, reviews, ads, positioning. | 🔶 Beta |
-| [amazon-review-analyzer](./amazon-review-analyzer) | Deep review analysis — sentiment, complaints, feature requests, competitive insights. | 🔶 Beta |
+| [amazon-competitor-analysis](./amazon-competitor-analysis) | Full-spectrum competitor analysis — listings, pricing, reviews, ads, positioning. | ✅ Available |
+| [amazon-review-analyzer](./amazon-review-analyzer) | Deep review analysis — sentiment, complaints, feature requests, competitive insights. | ✅ Available |
 
 ---
 
