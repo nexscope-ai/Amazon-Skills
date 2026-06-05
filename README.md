@@ -98,6 +98,17 @@ Import duties, landed costs, VAT/GST calculation for any international trade rou
 
 ---
 
+### 🕵️ Competitor Analysis (5 skills)
+
+| Skill | Description | Status |
+|-------|-------------|--------|
+| [amazon-competitor-monitoring](./amazon-competitor-monitoring) | Real-time competitor tracking — pricing changes, inventory alerts, new launches, review velocity, ad patterns. | ✅ Available |
+| [amazon-brand-analytics](./amazon-brand-analytics) | Brand Analytics interpretation — SFR analysis, Market Basket insights, Item Comparison positioning strategies. | ✅ Available |
+| [amazon-competitor-analysis](./amazon-competitor-analysis) | Full-spectrum competitor analysis — listings, pricing, reviews, ads, positioning. | ✅ Available |
+| [amazon-review-analyzer](./amazon-review-analyzer) | Deep review analysis — sentiment, complaints, feature requests, competitive insights. | ✅ Available |
+
+---
+
 ### 💰 Pricing & Profitability (7 skills)
 
 | Skill | Description | Status |
@@ -142,19 +153,6 @@ Import duties, landed costs, VAT/GST calculation for any international trade rou
 | [amazon-keyword-tracker](./amazon-keyword-tracker) | Keyword rank monitoring — position tracking, SERP changes, competitor movement alerts. | 🔶 Beta |
 | [amazon-price-tracker](./amazon-price-tracker) | Price monitoring — competitor pricing changes, Buy Box history, promotion detection. | 🔶 Beta |
 | [amazon-product-photography](./amazon-product-photography) | Product photography planning — shot lists, infographics, lifestyle scenes, image optimization. | 🔶 Beta |
-
----
-
-### 🕵️ Competitor Analysis (5 skills)
-
-| Skill | Description | Status |
-|-------|-------------|--------|
-| [amazon-competitor-monitoring](./amazon-competitor-monitoring) | Real-time competitor tracking — pricing changes, inventory alerts, new launches, review velocity, ad patterns. | ✅ Available |
-| [amazon-brand-analytics](./amazon-brand-analytics) | Brand Analytics interpretation — SFR analysis, Market Basket insights, Item Comparison positioning strategies. | ✅ Available |
-| [amazon-competitor-analysis](./amazon-competitor-analysis) | Full-spectrum competitor analysis — listings, pricing, reviews, ads, positioning. | ✅ Available |
-| [amazon-review-analyzer](./amazon-review-analyzer) | Deep review analysis — sentiment, complaints, feature requests, competitive insights. | ✅ Available |
-
----
 
 ### 🚀 Growth & Expansion (2 skills)
 
