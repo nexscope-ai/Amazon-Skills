@@ -115,11 +115,11 @@ Import duties, landed costs, VAT/GST calculation for any international trade rou
 |-------|-------------|--------|
 | [amazon-fba-calculator](./amazon-fba-calculator) | Complete FBA fee breakdown and profit analysis. Calculate referral fees, fulfillment fees, storage costs, and net margins. | ✅ Available |
 | [tariff-calculator-amazon](./tariff-calculator-amazon) | Universal tariff calculator. Import duties, landed costs, VAT/GST for any trade route. | ✅ Available |
-| [amazon-profit-analyzer](./amazon-profit-analyzer) | Comprehensive profit analysis — revenue waterfall, hidden fees, ACoS impact, return costs, optimization. | 🔶 Beta |
-| [amazon-repricing-strategy](./amazon-repricing-strategy) | Repricing strategy — Buy Box optimization, pricing rules, margin protection, tool selection. | 🔶 Beta |
-| [amazon-buy-box](./amazon-buy-box) | Buy Box strategy — eligibility factors, competitive pricing, FBA vs FBM impact. | 🔶 Beta |
-| [amazon-deal-finder](./amazon-deal-finder) | Deal planning — Lightning Deals, Best Deals, Coupons, Prime Exclusive, ROI calculator. | 🔶 Beta |
-| [amazon-shipping-calculator](./amazon-shipping-calculator) | FBA/FBM shipping and fulfillment cost calculation — dimensional weight, storage, removal. | 🔶 Beta |
+| [amazon-profit-analyzer](./amazon-profit-analyzer) | Comprehensive profit analysis — revenue waterfall, hidden fees, ACoS impact, return costs, optimization. | ✅ Available |
+| [amazon-repricing-strategy](./amazon-repricing-strategy) | Repricing strategy — Buy Box optimization, pricing rules, margin protection, tool selection. | ✅ Available |
+| [amazon-buy-box](./amazon-buy-box) | Buy Box strategy — eligibility factors, competitive pricing, FBA vs FBM impact. | ✅ Available |
+| [amazon-deal-finder](./amazon-deal-finder) | Deal planning — Lightning Deals, Best Deals, Coupons, Prime Exclusive, ROI calculator. | ✅ Available |
+| [amazon-shipping-calculator](./amazon-shipping-calculator) | FBA/FBM shipping and fulfillment cost calculation — dimensional weight, storage, removal. | ✅ Available |
 
 ---
 
