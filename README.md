@@ -128,9 +128,9 @@ Import duties, landed costs, VAT/GST calculation for any international trade rou
 | Skill | Description | Status |
 |-------|-------------|--------|
 | [amazon-ppc-campaign](./amazon-ppc-campaign) | Build PPC campaign structures or optimize existing campaigns. Calculates ACoS targets, groups keywords, sets bid strategies. | ✅ Available |
-| [amazon-advertising-strategy](./amazon-advertising-strategy) | Comprehensive ad strategy — SP + SB + SD, budget allocation, ACoS optimization. | 🔶 Beta |
-| [amazon-negative-keywords](./amazon-negative-keywords) | Negative keyword management — search term analysis, waste reduction, savings estimation. | 🔶 Beta |
-| [amazon-display-ads](./amazon-display-ads) | Sponsored Display campaigns — audience targeting, retargeting, creative optimization. | 🔶 Beta |
+| [amazon-advertising-strategy](./amazon-advertising-strategy) | Comprehensive ad strategy — SP + SB + SD, budget allocation, ACoS optimization. | ✅ Available |
+| [amazon-negative-keywords](./amazon-negative-keywords) | Negative keyword management — search term analysis, waste reduction, savings estimation. | ✅ Available |
+| [amazon-display-ads](./amazon-display-ads) | Sponsored Display campaigns — audience targeting, retargeting, creative optimization. | ✅ Available |
 
 ---
 
