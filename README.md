@@ -141,8 +141,8 @@ Import duties, landed costs, VAT/GST calculation for any international trade rou
 | [amazon-listing-optimization](./amazon-listing-optimization) | Create keyword-optimized listings from scratch or audit existing ones. Supports competitor ASIN analysis and 8-dimension scoring. | ✅ Available |
 | [amazon-a-plus-content](./amazon-a-plus-content) | A+ Content planning — module layouts, persuasive copy, comparison charts, image briefs. | ✅ Available |
 | [amazon-backend-keywords](./amazon-backend-keywords) | Backend search term optimization — 250-byte limit, deduplication, prioritization. | ✅ Available |
-| [amazon-search-optimization](./amazon-search-optimization) | Amazon search ranking optimization — A9 algorithm factors, indexing, rank improvement. | 🔶 Beta |
-| [amazon-listing-images](./amazon-listing-images) | Product listing image planning — shot lists, infographics, lifestyle scenes, mobile optimization. | 🔶 Beta |
+| [amazon-search-optimization](./amazon-search-optimization) | Amazon search ranking optimization — A9 algorithm factors, indexing, rank improvement. | ✅ Available |
+| [amazon-listing-images](./amazon-listing-images) | Product listing image planning — shot lists, infographics, lifestyle scenes, mobile optimization. | ✅ Available |
 
 ### 📊 Analytics & Monitoring (5 skills)
 
