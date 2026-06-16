@@ -149,9 +149,9 @@ Import duties, landed costs, VAT/GST calculation for any international trade rou
 | Skill | Description | Status |
 |-------|-------------|--------|
 | [amazon-sales-estimator](./amazon-sales-estimator) | Estimate monthly sales from BSR, ASIN, or keyword. Three modes: BSR Calculator, ASIN Lookup, Keyword Market Analysis. | ✅ Available |
-| [amazon-rank-tracker](./amazon-rank-tracker) | Keyword rank tracking — ranking factors, change diagnosis, improvement strategy. | 🔶 Beta |
-| [amazon-keyword-tracker](./amazon-keyword-tracker) | Keyword rank monitoring — position tracking, SERP changes, competitor movement alerts. | 🔶 Beta |
-| [amazon-price-tracker](./amazon-price-tracker) | Price monitoring — competitor pricing changes, Buy Box history, promotion detection. | 🔶 Beta |
+| [amazon-rank-tracker](./amazon-rank-tracker) | Keyword rank tracking — ranking factors, change diagnosis, improvement strategy. | ✅ Available |
+| [amazon-keyword-tracker](./amazon-keyword-tracker) | Keyword rank monitoring — position tracking, SERP changes, competitor movement alerts. | ✅ Available |
+| [amazon-price-tracker](./amazon-price-tracker) | Price monitoring — competitor pricing changes, Buy Box history, promotion detection. | ✅ Available |
 | [amazon-product-photography](./amazon-product-photography) | Product photography planning — shot lists, infographics, lifestyle scenes, image optimization. | 🔶 Beta |
 
 ### 🚀 Growth & Expansion (2 skills)
