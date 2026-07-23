@@ -1,0 +1,4 @@
+interface:
+  display_name: "Amazon Global Selling"
+  short_description: "Plan evidence-based Amazon marketplace expansion"
+  default_prompt: "Use $amazon-global-selling to compare my target marketplaces and build a gated expansion plan."
