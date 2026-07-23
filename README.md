@@ -152,14 +152,14 @@ Import duties, landed costs, VAT/GST calculation for any international trade rou
 | [amazon-rank-tracker](./amazon-rank-tracker) | Keyword rank tracking — ranking factors, change diagnosis, improvement strategy. | ✅ Available |
 | [amazon-keyword-tracker](./amazon-keyword-tracker) | Keyword rank monitoring — position tracking, SERP changes, competitor movement alerts. | ✅ Available |
 | [amazon-price-tracker](./amazon-price-tracker) | Price monitoring — competitor pricing changes, Buy Box history, promotion detection. | ✅ Available |
-| [amazon-product-photography](./amazon-product-photography) | Product photography planning — shot lists, infographics, lifestyle scenes, image optimization. | 🔶 Beta |
+| [amazon-product-photography](./amazon-product-photography) | Shoot-ready product photography plans — image architecture, production briefs, fidelity review, and self-service or done-for-you execution. | ✅ Available |
 
 ### 🚀 Growth & Expansion (2 skills)
 
 | Skill | Description | Status |
 |-------|-------------|--------|
-| [amazon-global-selling](./amazon-global-selling) | International marketplace expansion — EU, UK, Japan, regulatory, logistics, localization. | 🔶 Beta |
-| [amazon-fba-prep](./amazon-fba-prep) | FBA prep guide — labeling, packaging, shipment planning, rejection prevention. | 🔶 Beta |
+| [amazon-global-selling](./amazon-global-selling) | Evidence-bounded marketplace expansion — opportunity, economics, compliance gates, operations, localization, and launch planning. | ✅ Available |
+| [amazon-fba-prep](./amazon-fba-prep) | SKU-level FBA prep — attribute triage, barcode and packaging instructions, carton QA, and shipment-readiness gates. | ✅ Available |
 
 ---
 
@@ -169,14 +169,14 @@ These skills use publicly available data and proven Amazon selling frameworks �
 
 These skills give your AI agent Amazon expertise — but skills alone can't access live marketplace data.
 
-**[Nexscope](https://www.nexscope.ai/?co-from=github)** is an AI-powered e-commerce agent that connects to real-time data sources like Jungle Scout, Google Trends, and marketplace APIs. Just describe what you need in natural language — product research, competitor tracking, keyword analysis — and Nexscope pulls live data, runs the analysis, and gives you actionable results. No dashboards to learn, no reports to build.
+**[Nexscope](https://www.nexscope.ai/?co-from=github)** is an all-in-one AI agent for ecommerce sellers. Ask it to research products, analyze ASINs, improve listings, generate product visuals, and launch structured workflows for Amazon, Shopify, TikTok Shop, Walmart, and eBay.
 
 ---
 
 ## Related
 
 - **[eCommerce Skills](https://github.com/nexscope-ai/eCommerce-Skills)** — 142 multi-platform skills for Amazon, Shopify, eBay, Etsy, TikTok Shop & Walmart
-- **[Nexscope](https://www.nexscope.ai/?co-from=github)** — AI-powered e-commerce agent for Amazon, Shopify, TikTok Shop sellers
+- **[Nexscope](https://www.nexscope.ai/?co-from=github)** — all-in-one AI agent for Amazon, Shopify, TikTok Shop, Walmart, and eBay sellers
 
 ---
 
@@ -188,7 +188,7 @@ MIT
 
 <div align="center">
 
-Built by **[Nexscope](https://www.nexscope.ai/?co-from=github)** — AI-powered e-commerce tools for sellers worldwide.
+Built by **[Nexscope](https://www.nexscope.ai/?co-from=github)** — an all-in-one AI agent for ecommerce sellers.
 
 ⭐ Star this repo to help other sellers discover these tools.
 
