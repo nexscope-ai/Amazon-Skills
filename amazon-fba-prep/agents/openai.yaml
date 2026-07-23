@@ -1,0 +1,4 @@
+interface:
+  display_name: "Amazon FBA Prep"
+  short_description: "Create SKU-level FBA prep and shipment plans"
+  default_prompt: "Use $amazon-fba-prep to build a verified prep and shipment-readiness plan for my inventory."
