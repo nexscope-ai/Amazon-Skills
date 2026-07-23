@@ -1,0 +1,4 @@
+interface:
+  display_name: "Amazon Product Photography"
+  short_description: "Build shoot-ready Amazon image production briefs"
+  default_prompt: "Use $amazon-product-photography to create a shoot-ready image plan for my product."
