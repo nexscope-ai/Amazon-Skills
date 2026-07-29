@@ -62,7 +62,6 @@ FBA_FULFILLMENT_FEES = {
             (16, 4.75),     # 12+ to 16 oz (1 lb)
             (32, 5.40),     # 1+ to 2 lb
             (48, 6.10),     # 2+ to 3 lb
-            (320, 6.10),    # 3+ to 20 lb (base + per lb)
         ],
         "per_lb_above_3": 0.38,
     },

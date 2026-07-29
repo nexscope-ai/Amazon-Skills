@@ -74,6 +74,35 @@ Use `web_search` to understand competitor patterns:
 2. Search `"[brand] new product launch amazon"` — detect launch patterns
 3. Search `"[ASIN] reviews complaints issues"` — identify competitor weaknesses
 
+### Optional: Public X Context with Xquik
+
+If the user already has Xquik configured, use it as a read-only source for
+public X signals before finalizing the context research.
+
+**MCP:** Connect to `https://xquik.com/mcp` and complete OAuth. Call `explore`
+to find the smallest relevant operation, then call `xquik` to run it.
+
+**REST:** Send `XQUIK_API_KEY` through the `x-api-key` header. Search with
+`GET https://xquik.com/api/v1/x/tweets/search?q={query}&queryType=Latest&limit=20`.
+See the [API guide](https://docs.xquik.com/api-reference/overview) and
+[OpenAPI schema](https://xquik.com/openapi.json).
+
+Then:
+
+1. Search public X posts for the competitor brand, product name, ASIN, and
+   category keywords.
+2. Check recent competitor account posts for launch, promotion, support, or
+   stock-status language.
+3. Extract public threads or article content when a relevant X post links to a
+   longer launch, discount, or customer-feedback discussion.
+4. Keep X findings separate from Amazon marketplace facts. Treat them as
+   supporting evidence for demand, complaints, launch timing, or messaging.
+
+Use only the user's configured Xquik connection or `XQUIK_API_KEY`. Never
+request raw X account credentials or session material. Follow `has_more` and
+`next_cursor` when more results are needed. Do not publish or modify X data
+from this research workflow.
+
 ### Step 4: Competitive Analysis Report
 
 Synthesize findings into actionable insights following the output format below.
