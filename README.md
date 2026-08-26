@@ -169,14 +169,14 @@ These skills use publicly available data and proven Amazon selling frameworks �
 
 These skills give your AI agent Amazon expertise — but skills alone can't access live marketplace data.
 
-**[Nexscope](https://www.nexscope.ai/?co-from=github)** is an all-in-one AI agent for ecommerce sellers. Ask it to research products, analyze ASINs, improve listings, generate product visuals, and launch structured workflows for Amazon, Shopify, TikTok Shop, Walmart, and eBay.
+**[Nexscope](https://www.nexscope.ai/?co-from=github)** is an ecommerce data and creative platform. Use its marketplace intelligence and data APIs to research products, keywords, competitors, pricing, and reviews, or use its online image and video generators and Creative APIs to produce ecommerce content.
 
 ---
 
 ## Related
 
 - **[eCommerce Skills](https://github.com/nexscope-ai/eCommerce-Skills)** — 142 multi-platform skills for Amazon, Shopify, eBay, Etsy, TikTok Shop & Walmart
-- **[Nexscope](https://www.nexscope.ai/?co-from=github)** — all-in-one AI agent for Amazon, Shopify, TikTok Shop, Walmart, and eBay sellers
+- **[Nexscope](https://www.nexscope.ai/?co-from=github)** — ecommerce marketplace intelligence, online image and video generators, and developer APIs
 
 ---
 
@@ -188,7 +188,7 @@ MIT
 
 <div align="center">
 
-Built by **[Nexscope](https://www.nexscope.ai/?co-from=github)** — an all-in-one AI agent for ecommerce sellers.
+Built by **[Nexscope](https://www.nexscope.ai/?co-from=github)** — an ecommerce data and creative platform for marketplace research, online image and video generation, and developer integrations.
 
 ⭐ Star this repo to help other sellers discover these tools.
 
