@@ -12,7 +12,7 @@
 ![Downloads](https://img.shields.io/badge/downloads-12K+-orange?style=flat)
 [![Discord](https://img.shields.io/badge/Discord-Join%20us-5865F2?logo=discord&logoColor=white)](https://discord.com/invite/t7dfcMTmkH)
 
-Works with **OpenClaw** · **Claude Code** · **Cursor** · **Windsurf** · **Codex** · any [Skills](https://www.nexscope.ai/skillhub?co-from=github)-compatible agent
+Works with **OpenClaw** · **Claude Code** · **Cursor** · **Windsurf** · **Codex** · **[Autohand Code CLI](https://github.com/autohandai/code-cli)** · any [Skills](https://www.nexscope.ai/skillhub?co-from=github)-compatible agent
 
 </div>
 
