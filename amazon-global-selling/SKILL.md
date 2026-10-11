@@ -103,10 +103,10 @@ If numerical scoring is useful, define weights before scoring, show the formula,
 Use a transparent per-unit model:
 
 ```text
-Net proceeds before tax treatment
-= customer price and seller-paid shipping
+Customer receipts before tax treatment
+= product price + shipping charged to the customer
 - marketplace referral and closing fees
-- fulfillment or local delivery fees
+- fulfillment or local delivery costs paid by the seller
 - inbound freight and handling
 - duty, customs, and brokerage estimates
 - storage, returns, removals, and disposal allowance
@@ -115,6 +115,8 @@ Net proceeds before tax treatment
 - product and packaging cost
 = directional contribution per unit
 ```
+
+Customer shipping charges are receipts; seller-paid shipping is a cost. Include each delivery cost once: if a fulfillment fee already covers delivery, do not subtract that delivery cost again. If the supplied customer price already includes shipping, do not add the shipping charge a second time.
 
 Show source, date, currency, range, and confidence for every material input. Keep VAT/GST/sales-tax treatment separate until a qualified professional confirms how prices, collections, credits, and registrations apply to the seller.
 
