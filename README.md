@@ -14,6 +14,8 @@
 
 Works with **OpenClaw** · **Claude Code** · **Cursor** · **Windsurf** · **Codex** · any agent that supports the Skills format
 
+[Connect your AI assistant →](https://www.nexscope.ai/mcp-data?co-from=github&utm_source=github&utm_medium=referral&utm_campaign=github_mcp_launch&utm_content=amazon-skills_readme_header_mcp) · [Explore Nexscope APIs →](https://www.nexscope.ai/api-docs?co-from=github&utm_source=github&utm_medium=referral&utm_campaign=github_mcp_launch&utm_content=amazon-skills_readme_header_api)
+
 </div>
 
 ---
@@ -54,23 +56,35 @@ Install a skill, ask your AI assistant a question about your Amazon business, an
 
 ## ⭐ Most Popular
 
-🔍 **[Amazon Keyword Research](./amazon-keyword-research)**
+🔍 **Amazon Keyword Research**
 Long-tail keyword mining from Amazon autocomplete — competition analysis, seasonality trends, opportunity scoring across 12 marketplaces.
 
-📝 **[Listing Optimization](./amazon-listing-optimization)**
+[Research Amazon keywords with MCP →](https://www.nexscope.ai/mcp-map/amazon-keyword-intelligence?co-from=github&utm_source=github&utm_medium=referral&utm_campaign=github_mcp_launch&utm_content=amazon-skills_popular_amazon-keyword-research_mcp) · [View the Amazon Keyword Intelligence API →](https://www.nexscope.ai/api-docs/amazon-keyword-intelligence?co-from=github&utm_source=github&utm_medium=referral&utm_campaign=github_mcp_launch&utm_content=amazon-skills_popular_amazon-keyword-research_api)
+
+📝 **Listing Optimization**
 Create keyword-optimized listings from scratch or audit existing ones with competitor ASIN analysis and 8-dimension scoring.
 
-💰 **[FBA Calculator](./amazon-fba-calculator)**
+[Get Amazon product data with MCP →](https://www.nexscope.ai/mcp-map/amazon-product-detail?co-from=github&utm_source=github&utm_medium=referral&utm_campaign=github_mcp_launch&utm_content=amazon-skills_popular_amazon-listing-optimization_mcp) · [View the Amazon Product Detail API →](https://www.nexscope.ai/api-docs/amazon-product-detail?co-from=github&utm_source=github&utm_medium=referral&utm_campaign=github_mcp_launch&utm_content=amazon-skills_popular_amazon-listing-optimization_api)
+
+💰 **FBA Calculator**
 Complete FBA fee breakdown — referral fees, fulfillment fees, storage costs, net margin analysis.
 
-📢 **[PPC Campaign Builder](./amazon-ppc-campaign)**
+[Explore ecommerce MCP data tools →](https://www.nexscope.ai/mcp?co-from=github&utm_source=github&utm_medium=referral&utm_campaign=github_mcp_launch&utm_content=amazon-skills_popular_amazon-fba-calculator_mcp) · [Explore ecommerce data APIs →](https://www.nexscope.ai/api-docs?co-from=github&utm_source=github&utm_medium=referral&utm_campaign=github_mcp_launch&utm_content=amazon-skills_popular_amazon-fba-calculator_api)
+
+📢 **PPC Campaign Builder**
 Build PPC campaign structures, calculate ACoS targets, group keywords, and set bid strategies.
 
-📊 **[Sales Estimator](./amazon-sales-estimator)**
+[Explore Amazon Advertising MCP →](https://www.nexscope.ai/mcp-map/amazon-advertising?co-from=github&utm_source=github&utm_medium=referral&utm_campaign=github_mcp_launch&utm_content=amazon-skills_popular_amazon-ppc-campaign_mcp) · [View the Amazon Advertising API →](https://www.nexscope.ai/api-docs/amazon-advertising?co-from=github&utm_source=github&utm_medium=referral&utm_campaign=github_mcp_launch&utm_content=amazon-skills_popular_amazon-ppc-campaign_api)
+
+📊 **Sales Estimator**
 Estimate monthly sales from BSR, ASIN, or keyword — works across any Amazon category.
 
-🌍 **[Tariff Calculator](./tariff-calculator-amazon)**
+[Get Amazon sales estimates with MCP →](https://www.nexscope.ai/mcp-map/amazon-sales-estimates?co-from=github&utm_source=github&utm_medium=referral&utm_campaign=github_mcp_launch&utm_content=amazon-skills_popular_amazon-sales-estimator_mcp) · [View the Amazon Sales Estimates API →](https://www.nexscope.ai/api-docs/amazon-sales-estimates?co-from=github&utm_source=github&utm_medium=referral&utm_campaign=github_mcp_launch&utm_content=amazon-skills_popular_amazon-sales-estimator_api)
+
+🌍 **Tariff Calculator**
 Import duties, landed costs, VAT/GST calculation for any international trade route.
+
+[Explore cross-border MCP data tools →](https://www.nexscope.ai/mcp?co-from=github&utm_source=github&utm_medium=referral&utm_campaign=github_mcp_launch&utm_content=amazon-skills_popular_tariff-calculator-amazon_mcp) · [Explore cross-platform data APIs →](https://www.nexscope.ai/api-docs?co-from=github&utm_source=github&utm_medium=referral&utm_campaign=github_mcp_launch&utm_content=amazon-skills_popular_tariff-calculator-amazon_api)
 
 > **🛒 Need multi-platform tools?** See [eCommerce Skills](https://github.com/nexscope-ai/eCommerce-Skills) — multi-platform skills for Amazon, Shopify, eBay, Etsy, TikTok Shop & Walmart.
 
