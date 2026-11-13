@@ -23,6 +23,7 @@ npx skills add nexscope-ai/Amazon-Skills --skill amazon-product-research -g
 - **Market entry analysis**: Barriers, investment required, time to profitability
 - **Sourcing guidance**: Supplier options, MOQ requirements, quality considerations
 - **Risk evaluation**: Market risks, regulatory issues, trend sustainability
+- **Decision quality gates**: Separates opportunity scores from Go/No-Go decisions using evidence and blocker checks
 - **Multi-marketplace support**: US, UK, DE, FR, IT, ES, JP, CA, AU, IN, MX, BR
 
 ## Usage Examples
@@ -188,6 +189,27 @@ Weight each factor and calculate composite score:
 - **5-6**: 🟡 Moderate opportunity - proceed with caution
 - **3-4**: 🔴 Poor opportunity - high risk
 - **1-2**: 🔴 Avoid - not viable
+
+### Decision Quality Checklist
+
+Before giving a final recommendation, separate the score from the launch decision. A high score should not override missing evidence or hard blockers.
+
+Use these gates:
+
+| Gate | Pass Signal | Hold / Reject Signal |
+|------|-------------|----------------------|
+| Demand evidence | Multiple buyer-intent keywords, stable trend, and visible customer discussion | One keyword spike, weak search intent, or unclear seasonality |
+| Competition opening | Review, content, price, bundle, or feature gap a new seller can realistically exploit | Top sellers dominate reviews, price, brand trust, and listing quality |
+| Unit economics | Margin still works after FBA fees, referral fees, ads, returns, and inbound shipping | Profit only works under optimistic CPC, return rate, or supplier cost assumptions |
+| Operational fit | MOQ, lead time, QC, packaging, and support burden fit the seller's resources | First order requires too much cash, long lead time, or complex QA |
+| Risk screen | Compliance, IP, safety, and policy risks are known and manageable | Any unresolved compliance, safety, or IP risk could block launch |
+
+Decision rules:
+
+- Use **Recommended to pursue** only when demand, competition, economics, operations, and risk all pass or have clear mitigation.
+- Use **Conditional recommendation** when the opportunity depends on 1-2 assumptions that can be validated quickly.
+- Use **Not recommended** when a hard blocker exists, even if the weighted score looks attractive.
+- Always list the next smallest validation step when evidence is incomplete.
 
 ## Output Format
 
