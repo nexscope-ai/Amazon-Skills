@@ -1,111 +1,78 @@
 ---
 name: amazon-listing-optimization
-description: "Amazon listing builder and optimizer for sellers. Two modes: (A) Create — build keyword-optimized listings from scratch using keyword lists + product characteristics + AI copywriting, (B) Optimize — audit existing listings, find keyword gaps, score across 8 dimensions, and rewrite with missing keywords. Integrates with amazon-keyword-research for keyword input. Works on 12 Amazon marketplaces. No API key required. Use when: (1) creating a new Amazon listing from keywords, (2) auditing an existing listing for SEO and conversion, (3) checking keyword coverage in title/bullets/description, (4) generating listing copy with target keywords and tone, (5) comparing listings against competitors, (6) preparing a listing for launch or relaunch."
+description: "Amazon listing builder and optimizer for sellers. Create or optimize compliant, keyword-aware listings from a reference ASIN and core keyword, using Chrome to analyze the top 3-5 organic Amazon search competitors and separate primary title traffic terms from secondary product-highlight terms. Prioritizes Amazon JP compliance: concise 75-character main titles by default, 125-character comma-separated product highlights, factual bullets, no forced Generic for no-brand listings, prohibited-claim checks, and natural Japanese copy. Use when generating or auditing titles, product highlights, bullets, backend terms, keyword priority, competitor gaps, or launch/relaunch listing copy."
 metadata: {"nexscope":{"emoji":"📝","category":"amazon"}}
 ---
 
 # Amazon Listing Optimization 📝
 
-Build keyword-optimized listings from scratch, or audit and optimize existing ones. No API key — works out of the box.
-
-## Installation
-
-```bash
-npx skills add nexscope-ai/Amazon-Skills --skill amazon-listing-optimization -g
-```
+Build compliant, keyword-aware Amazon listings from scratch, or audit and optimize existing ones. Compliance comes before keyword coverage; never add keywords in a way that violates marketplace title or bullet point requirements.
 
 ## Two Modes
 
 | Mode | When to Use | Input | Output |
 |------|-------------|-------|--------|
-| **A — Create** | Building a new listing | Keywords and/or competitor ASINs + product info + tone | Full listing copy + keyword coverage score |
-| **B — Optimize** | Improving an existing listing | Your ASIN or URL (+ optional keywords or competitor ASINs) | Optimized listing copy + audit report + gap analysis |
+| **A — Create** | Building a new listing | Reference ASIN + core keyword + product facts | Full listing copy + ranked competitor evidence + keyword coverage |
+| **B — Optimize** | Improving an existing listing | Reference ASIN + core keyword | Optimized listing copy + ranked competitor evidence + gap analysis |
 
-## Mode A — Three Ways to Start
+## Required Inputs
 
-| Input Source | How it Works |
-|-------------|-------------|
-| **Keywords** | User provides keyword list → skill prioritizes and generates listing |
-| **Competitor ASINs** | User provides 1-3 competitor ASINs → skill fetches their listings, extracts their keywords, then generates a listing that covers all their keywords and more |
-| **Both** | User provides keywords + competitor ASINs → skill merges both sources for maximum coverage |
+- **Reference ASIN**: The listing to optimize or the closest product reference. Use it to verify product facts, quantity, compatibility, claims, and current copy.
+- **Core keyword**: The exact shopper query to search on the target Amazon marketplace. Use it to identify ranked competitors and traffic-term priority.
+- **Marketplace**: Infer from the ASIN URL or user context; ask only when it cannot be determined safely.
+
+Do not generate final copy until both the reference ASIN and core keyword are available. Additional keyword lists or competitor ASINs are optional supporting inputs, not substitutes for ranked search evidence.
 
 ## Capabilities
 
-- **Keyword-driven listing generation**: Import keywords (from amazon-keyword-research, manual list, or extracted from competitor ASINs), rank by priority, generate copy that maximizes keyword coverage
-- **Competitor keyword extraction**: Fetch competitor listings and automatically extract their title/bullet keywords as your baseline
-- **8-dimension audit & scoring**: Title, bullets, description, images, A+ content, pricing, reviews, SEO coverage
+- **Compliance-first listing generation**: Import keywords (from amazon-keyword-research, manual list, or extracted from competitor ASINs), rank by priority, then generate copy that passes marketplace title and bullet rules before optimizing coverage
+- **Title decomposition**: Split an overloaded legacy title into a short compliant main title plus separate product highlights so important claims such as standards, tested reduction/removal items, compatibility, and replacement guidance are preserved without stuffing the title
+- **Ranked competitor keyword extraction**: Search the core keyword in Chrome, exclude sponsored placements, and analyze the first 3-5 relevant organic results in displayed order
+- **9-part audit & scoring**: Main title compliance, product highlights, bullet compliance, description, images, A+ content, pricing, reviews, SEO coverage
 - **Keyword coverage tracking**: Visual map showing which keywords appear in title / bullets / description / missing
 - **Tone selection**: Professional, Friendly, Urgent, Luxury — affects AI copywriting style
 - **Competitive benchmarking**: Compare your listing against competitors
 - **Multi-marketplace**: US, UK, DE, FR, IT, ES, JP, CA, AU, IN, MX, BR
 
-## Usage Examples
-
-### Mode A — Create from Keywords
-
-```
-Create a listing for a portable blender. Keywords: portable blender, smoothie maker, USB rechargeable, travel blender, personal blender. Material: BPA-free Tritan. Color: White. Capacity: 380ml. Tone: Friendly.
-```
-
-```
-I have these keywords from my research: [paste keyword list]. Product: silicone kitchen utensil set, 12 pieces, heat resistant to 480°F. Generate a full listing.
-```
-
-### Mode A — Create from Competitor ASINs
-
-```
-I want to sell a dog t-shirt on Amazon US. Here are 3 competitors I want to beat: B0D72TSM62, B0ABC12345, B0XYZ67890. My product is 100% cotton, 6 colors, XS-XL, funny print. Analyze their listings and create one that's better. Friendly tone.
-```
-
-```
-Create a listing for my yoga mat. Look at this competitor: B09V3KXJPB. Extract their keywords, find what they're missing, and build a listing that covers more keywords than them. Product: 6mm TPE, non-slip, carrying strap included. Tone: Professional.
-```
-
-### Mode A — Create from Keywords + Competitor ASINs
-
-```
-Use amazon-keyword-research to find keywords for "portable blender", also analyze these competitors: B0CPY1GFVZ, B0CXLF3Y19. Combine all keywords and create a listing. Product: 380ml, USB-C, BPA-free Tritan. Tone: Professional.
-```
-
-### Mode B — Optimize Existing
-
-```
-Audit the listing for ASIN B0D72TSM62 on Amazon US
-```
-
-```
-Optimize B0D72TSM62 using these keywords: dog shirt, pet clothes, puppy clothing — show me what's missing and rewrite
-```
-
-```
-Optimize my listing B0D72TSM62 by analyzing these competitors: B0ABC12345, B0XYZ67890. Find what keywords they have that I don't, and rewrite my listing to beat them.
-```
-
----
-
 ## Mode A Workflow — Create Listing from Keywords
 
-### Step A1: Collect Keywords
+### Step A1: Build Ranked Competitor Evidence
 
-Keywords can come from four sources (use one or combine multiple):
+1. Open the target Amazon marketplace in the user's external Chrome browser and search the exact core keyword.
+2. Read the visible result order. Exclude Sponsored/スポンサー placements, brand-store banners, accessories, and products that do not match the same product intent.
+3. Select the first 3-5 relevant organic results. Record organic rank, ASIN, title, and repeated traffic phrases. Do not silently replace ranked results with hand-picked competitors.
+4. Fetch or open the reference ASIN and selected competitor detail pages only as needed to verify product facts and title context.
+5. Treat third-party extension search-volume data as directional evidence when visible. Never invent exact volume. If no volume is available, label priority as rank/frequency-based.
+6. If Chrome cannot access the results, report the limitation and use a clearly labeled fallback source; do not present fallback order as Amazon organic rank.
 
-1. **From [amazon-keyword-research](https://github.com/nexscope-ai/Amazon-Skills/tree/main/amazon-keyword-research) skill** (recommended): Run keyword research first, then feed results directly. Install: `npx skills add nexscope-ai/Amazon-Skills --skill amazon-keyword-research -g`
-2. **From competitor ASINs**: User provides 1-3 competitor ASINs → run `<skill>/scripts/fetch-listing.sh` on each → extract keywords from their titles, bullets, and descriptions → use as your keyword baseline. This is the fastest way to start — you inherit what's already working for competitors, then add more.
-3. **From user's keyword list**: User pastes their own keyword list (e.g. from Helium 10 Cerebro, Jungle Scout, or manual research)
-4. **Auto-discover**: Use `web_search` to find top keywords for the product category
+Always output the ranked competitor evidence before the keyword allocation table.
 
-When competitor ASINs are provided, always fetch and analyze them first. Extract every meaningful keyword from their titles and bullets, then merge with any user-provided keywords. The goal: cover everything competitors cover, plus keywords they missed.
+### Step A1.5: Set Marketplace Compliance Rules
+
+Before drafting, identify the target marketplace and category. Use these defaults unless the user provides a stricter category template or Seller Central field limit:
+
+| Marketplace | Main title default | Product highlights default | Bullet default | Output language |
+|-------------|--------------------|----------------------------|----------------|-----------------|
+| JP | 75 characters including spaces | One comma-separated phrase line, 125 characters max | At least 3 bullets; 10-255 characters each | Japanese |
+| US/UK/AU/CA/IN | Marketplace/category title limit | One comma-separated phrase line, 125 characters max unless marketplace differs | At least 3 bullets; concise factual bullets | English |
+| DE | Marketplace/category title limit | One comma-separated phrase line, 125 characters max unless marketplace differs | At least 3 bullets; concise factual bullets | German |
+| FR | Marketplace/category title limit | One comma-separated phrase line, 125 characters max unless marketplace differs | At least 3 bullets; concise factual bullets | French |
+| ES/MX | Marketplace/category title limit | One comma-separated phrase line, 125 characters max unless marketplace differs | At least 3 bullets; concise factual bullets | Spanish |
+| IT | Marketplace/category title limit | One comma-separated phrase line, 125 characters max unless marketplace differs | At least 3 bullets; concise factual bullets | Italian |
+| BR | Marketplace/category title limit | One comma-separated phrase line, 125 characters max unless marketplace differs | At least 3 bullets; concise factual bullets | Portuguese |
+
+For Amazon JP title and bullet work, treat the Seller Central help page "Product title requirements and guidelines" as authoritative. If the user provides a category-specific flat file or Product Type template with stricter values, follow the stricter value and mention it in the compliance check.
 
 ### Step A2: Prioritize Keywords
 
 Organize keywords into tiers:
 
 ```
-🔴 Primary (must appear in Title):
+🔴 Primary (try Main Title first if compliant):
   - [keyword] — [search volume if known]
   - [keyword] — [search volume if known]
 
-🟡 Secondary (must appear in Bullets):
+🟡 Secondary (try Product Highlights if factual and natural):
   - [keyword]
   - [keyword]
 
@@ -119,10 +86,12 @@ Organize keywords into tiers:
 ```
 
 Priority rules:
-- Highest search volume → Title (front-loaded)
-- Medium volume + high relevance → Bullets (one primary keyword per bullet)
-- Lower volume / long-tail → Description
-- Remaining → Backend search terms (advise seller to add in Seller Central)
+- **Primary → Main Title**: Start with the user-provided core keyword. Add terms that occur in multiple top organic titles, especially ranks 1-3, and directly identify the product. Weight evidence in this order: relevance, organic rank, frequency across competitors, visible volume, then title position.
+- **Secondary → Product Highlights**: Put high-relevance traffic terms that recur in competitors but are less essential to product identity, plus verified standards, functions, material, pack count, capacity, replacement interval, and compatibility.
+- **Tertiary → Bullets/Description**: Put factual long-tail phrases, use cases, detailed compatibility, and differentiators where they read naturally.
+- **Backend**: Put relevant synonyms, spelling variants, and uncovered terms without duplicating phrases already indexed in visible fields.
+- A term appearing once in a lower-ranked title does not outrank a recurring term in ranks 1-3. Never treat raw frequency alone as search volume.
+- Never force a keyword into the title or bullets if it creates repetition, irrelevant phrasing, unverifiable claims, or unnatural marketplace-language copy
 
 ### Step A3: Collect Product Characteristics
 
@@ -148,29 +117,54 @@ Default: **Professional** if not specified.
 
 ### Step A5: Generate Listing Copy
 
+Run compliance checks before and after drafting. If a keyword or product fact conflicts with main title compliance, move it to Product Highlights, Bullet Points, Description, or Backend Search Terms instead of forcing it into the title.
+
 Generate each component following these rules:
 
-**Title (max 200 characters):**
-- Format: `[Brand] + [Primary Keyword] + [Key Attribute 1] + [Key Attribute 2] + [Secondary Keyword] + [Differentiator]`
-- Primary keyword as close to the front as possible (after brand)
-- No ALL CAPS except brand name
-- No promotional claims ("best", "#1", "top rated")
-- Include size/color/quantity if relevant to search
+**Main Title / 主标题 (Amazon JP compliance-first, default max 75 characters including spaces):**
+- Use the marketplace or category-specific limit if the category template is stricter; for Amazon JP, default to 75 characters including spaces unless the user provides a different category rule from Seller Central
+- Format: `[Brand] + [product type / primary keyword] + [most important verifiable attributes] + [size/color/quantity/model when relevant]`
+- Put the most relevant product-identifying term near the front, but keep the title readable and factual
+- Include only attributes that distinguish the exact product: material, size, color, quantity, model, compatibility, or key specification
+- For no-brand or generic listings, do not insert `Generic` into the title unless the user explicitly asks or the marketplace field requires it. Start with the product type, compatible brand target, or core search phrase instead
+- Do not include promotional or subjective claims such as "best", "#1", "top rated", "premium", "ultimate", "limited time", "hot sale", or unsupported superiority claims
+- Do not include price, discount, coupon, shipping, delivery speed, warranty, seller name, inventory status, launch date, competitor names, or external links
+- Do not use decorative symbols, repeated punctuation, keyword stuffing, duplicated words, ALL CAPS, or irrelevant search terms
+- For Amazon JP, write natural Japanese by default. Keep foreign terms only when they are standard search terms, brand/model names, or user-provided product facts
 
-**Bullet Points (5 bullets, max 500 chars each):**
-- Each bullet: `[BENEFIT HEADER IN CAPS] — [Benefit explanation with keyword naturally embedded]`
-- Bullet 1: Primary feature + primary keyword
-- Bullet 2: Key use case + secondary keyword
-- Bullet 3: Quality/material + trust signal
-- Bullet 4: What's included / compatibility
-- Bullet 5: Guarantee / differentiator / social proof hint
-- Each bullet should contain at least 1 target keyword
+**Product Highlights / 商品亮点 (searchable subtitle field):**
+- Always output this as a single separate field after Main Title and before Bullet Points
+- Keep it within 125 characters. Count the final field before outputting it
+- Write comma-separated short phrases, not complete sentences. Do not number the phrases and do not end with a full stop
+- Treat this as searchable subtitle copy shown under the title on search results and the product detail page. It must be independent from the detail-page bullet points
+- Use it to preserve important details that were previously crammed into the title but should not overload the main title: material, recommended use scenes, core functions, specifications, accessories/pack count, standards/certifications, tested removal or reduction items, compatibility, replacement interval, and domestic inspection
+- Prefer a balanced mix from four groups when product facts support them: material info, use scenes, core functions, specifications/accessories
+- Do not repeat the entire main title. Do not use promotional claims, decorative symbols, seller claims, price/shipping language, unsupported superiority language, or complete sentence structure
+- For Amazon JP, include important searchable terms such as `JIS規格`, `PFOS・PFOA`, `19項目除去`/`19項目低減`, `国内検査済み`, `交換目安`, material, capacity, pack count, and compatible model families here when they are verified product facts and cannot all fit cleanly in the main title
+- If evidence says "低減" rather than "除去", use "低減". Only use "除去" when the source listing or supplied evidence supports that exact wording
+
+**Bullet Points (Amazon JP compliance-first):**
+- Provide at least 3 bullet points; use 5 when there are enough distinct product facts
+- Keep each bullet concise, factual, and easy to scan. Use 10-255 characters per bullet unless the category template gives a stricter limit
+- Use sentence-style bullets, not all-caps benefit headers. Do not begin with a decorative label such as `[BENEFIT HEADER]`
+- Put one clear idea in each bullet: main feature, material/quality, size/fit/compatibility, use case, included items, or care/safety note
+- Embed target keywords only when they read naturally and are supported by product facts
+- Do not include prohibited content: promotional pricing, discounts, coupons, shipping promises, seller/contact details, external URLs, requests for reviews, guarantees not backed by product policy, medical/drug claims, competitor comparisons, or unverifiable superlatives
+- Do not repeat the same keyword across multiple bullets just to increase coverage; prefer synonyms or move lower-priority terms to description/backend search terms
+- For Amazon JP, write fluent Japanese bullets. Avoid machine-translated English structure and avoid mixing English keywords unless they are natural in Japanese search behavior
+
+Recommended bullet structure:
+1. Core product identity and main use
+2. Main material, specification, or performance fact
+3. Size, quantity, compatibility, or what is included
+4. Use case or target situation
+5. Care, storage, safety, or differentiator if factual
 
 **Description (max 2000 characters):**
 - Opening: Problem/pain point the product solves
 - Middle: Features → benefits (expand on bullets, don't repeat verbatim)
 - Close: Call to action + what's in the box
-- Embed remaining keywords not used in title/bullets
+- Embed remaining keywords not used in main title, product highlights, or bullets
 - Use line breaks for readability
 
 ### Step A6: Keyword Coverage Score
@@ -180,16 +174,16 @@ After generating, produce a coverage map:
 ```
 ## Keyword Coverage Report
 
-| Keyword | Volume | In Title? | In Bullets? | In Description? | Status |
-|---------|--------|-----------|-------------|-----------------|--------|
-| portable blender | 45,000 | ✅ | ✅ | ✅ | 🟢 Covered |
-| smoothie maker | 22,000 | ❌ | ✅ | ✅ | 🟡 Add to title |
-| USB rechargeable | 18,000 | ✅ | ✅ | ❌ | 🟢 Covered |
-| travel blender | 12,000 | ❌ | ❌ | ✅ | 🟡 Add to bullets |
-| mini blender | 8,000 | ❌ | ❌ | ❌ | 🔴 Missing |
+| Keyword | Volume | In Main Title? | In Product Highlights? | In Bullets? | In Description? | Status |
+|---------|--------|----------------|------------------------|-------------|-----------------|--------|
+| portable blender | 45,000 | ✅ | ❌ | ✅ | ✅ | 🟢 Covered |
+| smoothie maker | 22,000 | ❌ | ✅ | ✅ | ✅ | 🟡 Consider main title only if compliant |
+| USB rechargeable | 18,000 | ✅ | ✅ | ✅ | ❌ | 🟢 Covered |
+| travel blender | 12,000 | ❌ | ✅ | ❌ | ✅ | 🟡 Consider bullet only if factual |
+| mini blender | 8,000 | ❌ | ❌ | ❌ | ❌ | 🔴 Missing |
 
 Coverage: 18/22 keywords (82%)
-Title keywords: 6/8 slots used
+Main Title keywords: 6/8 slots used
 Bullet keywords: 12/15 target keywords covered
 Uncovered → recommend for Backend Search Terms
 ```
@@ -219,15 +213,21 @@ Run the bundled script:
 
 If script returns incomplete data, fall back to `web_fetch` on the product URL.
 
-### Step B2: Discover Target Keywords
+### Step B2: Discover and Rank Target Keywords
 
-If user provides keywords, use those. Otherwise, auto-discover:
+Use the Step A1 Chrome workflow with the required core keyword. Compare the reference ASIN against the first 3-5 relevant organic competitors, then allocate terms using Step A2. The core keyword and recurring product-identity phrases belong in the Main Title first; secondary traffic terms and verified claim/specification phrases belong in Product Highlights; detailed long-tail terms belong in bullets, description, or backend terms.
 
-1. Extract apparent keywords from current title and bullets
-2. Run `web_search` for `site:amazon.com "[product type]"` to find competitors
-3. Extract keywords from top 3 competitor titles and bullets
-4. (Optional) Chain with `amazon-keyword-research` skill for deeper analysis
-5. Compile a combined keyword list with estimated priority
+Output this evidence table before the gap analysis:
+
+| Organic Rank | ASIN | Competitor Title | Repeated Traffic Terms | Exclusion/Notes |
+|--------------|------|------------------|------------------------|-----------------|
+| 1 | [ASIN] | [title] | [terms] | Included |
+
+Then output a keyword allocation table:
+
+| Keyword | Evidence | Priority | Destination | Reason |
+|---------|----------|----------|-------------|--------|
+| [core keyword] | User input + ranks 1-3 | Primary | Main Title | Highest product intent |
 
 ### Step B3: Keyword Gap Analysis
 
@@ -237,31 +237,52 @@ Compare current listing against target keywords:
 ## Keyword Gap Analysis: [ASIN]
 
 ### ✅ Keywords Found in Listing
-| Keyword | In Title | In Bullets | In Description |
-|---------|----------|------------|----------------|
-| [kw] | ✅ | ✅ | ❌ |
+| Keyword | In Main Title | In Product Highlights | In Bullets | In Description |
+|---------|---------------|-----------------------|------------|----------------|
+| [kw] | ✅ | ✅ | ✅ | ❌ |
 
 ### ❌ Missing Keywords (Competitors Have, You Don't)
 | Keyword | Competitor 1 | Competitor 2 | Competitor 3 | Priority |
 |---------|-------------|-------------|-------------|----------|
-| [kw] | ✅ Title | ✅ Bullet | ❌ | 🔴 High |
+| [kw] | ✅ Main Title | ✅ Bullet | ❌ | 🔴 High |
 
 ### Coverage: X/Y keywords (Z%)
 ```
 
-### Step B4: 8-Dimension Audit
+### Step B3.5: Main Title, Product Highlights, and Bullet Compliance Gap Analysis
+
+For every existing or competitor listing, separately identify compliance risks before recommending copy changes:
+
+```
+## Main Title + Product Highlights + Bullet Compliance Gap Analysis
+
+| Field | Issue | Severity | Fix |
+|-------|-------|----------|-----|
+| Main Title | Over 75-character JP default / category limit | High | Shorten to core product identity and verifiable attributes |
+| Main Title | Promotional claim or unverifiable superlative | High | Replace with factual attribute or move verified fact to Product Highlights |
+| Main Title | Repeated keyword or keyword stuffing | Medium | Keep one natural occurrence; move extras to Product Highlights or backend terms |
+| Product Highlights | Missing key facts from old title | High | Add verified comma-separated phrases for material, scenes, functions, specifications, standards, PFOS/PFOA, pack count, replacement guidance, or compatibility |
+| Product Highlights | Over 125 characters or written as sentences/list items | High | Rewrite as one comma-separated phrase line within 125 characters |
+| Product Highlights | Unsupported claim wording | High | Use the exact supported wording, such as reduction vs removal |
+| Bullets | Fewer than 3 usable bullets | High | Add factual bullets from verified product facts |
+| Bullets | Promotional pricing/shipping/review request/external contact | High | Remove prohibited content |
+| Bullets | All-caps header or unnatural translation | Medium | Rewrite as natural marketplace-language sentence |
+```
+
+### Step B4: 9-Part Audit
 
 Score each on the scale shown, with keyword integration factored in:
 
 | Dimension | Max Score | Key Criteria |
 |-----------|-----------|-------------|
-| **Title** | /15 | Primary keyword near front? Brand? Attributes? Under 200 chars? Not truncated on mobile? |
-| **Bullet Points** | /15 | All 5 used? Benefit-first? Keywords embedded naturally? Under 500 chars each? |
-| **Images** | /15 | 7+ images? White bg main? Infographic? Lifestyle? Size ref? Video? |
+| **Main Title** | /15 | Marketplace-compliant? Under Amazon JP 75-character default or category limit? Factual? No prohibited claims, duplicated words, keyword stuffing, decorative symbols, irrelevant terms, or forced `Generic` for no-brand listings? |
+| **Product Highlights** | /10 | One comma-separated phrase line? Within 125 characters? Independent from bullets? Key searchable facts preserved: material, scenes, functions, specs, pack count, standards, PFOS/PFOA, inspection, compatibility, or replacement interval? |
+| **Bullet Points** | /15 | At least 3 bullets? 10-255 chars each unless category limit differs? Factual, readable, non-promotional, no all-caps headers, keywords embedded naturally? |
+| **Images** | /10 | 7+ images? White bg main? Infographic? Lifestyle? Size ref? Video? |
 | **A+ Content** | /10 | Present? Brand story? Comparison chart? Lifestyle imagery? |
 | **Description** | /10 | Keywords not in title/bullets? Readable? Problem→solution flow? |
 | **Pricing** | /10 | Competitive? Coupon/deal present? |
-| **Reviews** | /15 | 4.0+ stars? 100+ reviews? Recent reviews positive? |
+| **Reviews** | /10 | 4.0+ stars? 100+ reviews? Recent reviews positive? |
 | **SEO Coverage** | /10 | Primary kw in title+bullets+desc? Long-tail present? No wasted repeats? **Keyword coverage %** |
 
 ### Step B5: Generate Optimized Copy
@@ -270,6 +291,7 @@ Rewrite the listing incorporating missing keywords:
 - Show **before vs after** for each component
 - Highlight which keywords were added and where
 - Maintain the brand's existing tone unless a different tone is requested
+- Fix compliance issues before adding new keywords. If a missing keyword would make the main title, product highlights, or bullets non-compliant, place it in description or backend search terms and explain why
 
 ---
 
@@ -282,15 +304,18 @@ The primary deliverable is always a **ready-to-use listing** that the seller can
 ```
 # ✅ Your Listing — Ready to Use
 
-## Title
-[title text — copy this directly into Seller Central]
+## Main Title / 主标题
+[short compliant title — copy this directly into Seller Central title field]
+
+## Product Highlights / 商品亮点
+[comma-separated short phrases under 125 characters; no numbering; no full sentence]
 
 ## Bullet Points
-1. [BENEFIT HEADER] — [text with keyword]
-2. [BENEFIT HEADER] — [text with keyword]
-3. [BENEFIT HEADER] — [text with keyword]
-4. [BENEFIT HEADER] — [text with keyword]
-5. [BENEFIT HEADER] — [text with keyword]
+1. [factual bullet with a naturally embedded keyword]
+2. [factual bullet with a distinct product fact]
+3. [factual bullet with size/material/compatibility/use case]
+4. [optional factual bullet if supported by product facts]
+5. [optional factual bullet if supported by product facts]
 
 ## Description
 [description text — copy this directly into Seller Central]
@@ -303,18 +328,34 @@ The primary deliverable is always a **ready-to-use listing** that the seller can
 # 📊 How We Built This Listing (Diagnostic)
 
 **Marketplace:** Amazon [XX] | **Tone:** [tone] | **Keywords imported:** [count]
-**Title characters:** [X]/200 | **Description characters:** [X]/2000
+**Main title characters:** [X]/[75 or category limit] | **Product highlights characters:** [X]/125 | **Bullet count:** [X] | **Description characters:** [X]/2000
+
+## Compliance Check: Main Title + Product Highlights + Bullet Points
+
+| Field | Check | Result | Notes |
+|-------|-------|--------|-------|
+| Main Title | Within marketplace/category limit | Pass/Fail | [character count] |
+| Main Title | Factual product identity, no promotional claims, no forced Generic for no-brand listings | Pass/Fail | [notes] |
+| Main Title | No duplicated words, keyword stuffing, decorative symbols, or irrelevant terms | Pass/Fail | [notes] |
+| Product Highlights | One comma-separated phrase line, no numbering, no complete sentences | Pass/Fail | [notes] |
+| Product Highlights | Within 125 characters | Pass/Fail | [character count] |
+| Product Highlights | Key old-title facts preserved outside the title | Pass/Fail | [notes] |
+| Product Highlights | Accurate claim wording and factual support | Pass/Fail | [notes] |
+| Product Highlights | Independent from detail-page bullet points | Pass/Fail | [notes] |
+| Bullets | At least 3 bullets, each within limit | Pass/Fail | [count and range] |
+| Bullets | Factual, natural, no all-caps headers or promotional content | Pass/Fail | [notes] |
+| Bullets | Keywords used naturally and supported by product facts | Pass/Fail | [notes] |
 
 ## Keyword Coverage: [X]%
 
-| Keyword | Volume | In Title | In Bullets | In Description | Status |
-|---------|--------|----------|------------|----------------|--------|
-| [kw] | [vol] | ✅/❌ | ✅/❌ | ✅/❌ | 🟢🟡🔴 |
+| Keyword | Volume | In Main Title | In Product Highlights | In Bullets | In Description | Status |
+|---------|--------|---------------|-----------------------|------------|----------------|--------|
+| [kw] | [vol] | ✅/❌ | ✅/❌ | ✅/❌ | ✅/❌ | 🟢🟡🔴 |
 
 ## Keyword Priority Breakdown
-🔴 Primary (Title): [list]
-🟡 Secondary (Bullets): [list]
-🟢 Tertiary (Description): [list]
+🔴 Primary (Main Title): [list]
+🟡 Secondary (Product Highlights): [list]
+🟢 Tertiary (Bullets/Description): [list]
 ⚪ Backend: [list]
 ```
 
@@ -323,15 +364,18 @@ The primary deliverable is always a **ready-to-use listing** that the seller can
 ```
 # ✅ Optimized Listing — Ready to Use
 
-## Title
-[optimized title — copy this directly into Seller Central]
+## Main Title / 主标题
+[optimized short compliant title — copy this directly into Seller Central title field]
+
+## Product Highlights / 商品亮点
+[optimized comma-separated short phrases under 125 characters; no numbering; no full sentence]
 
 ## Bullet Points
-1. [BENEFIT HEADER] — [optimized text]
-2. [BENEFIT HEADER] — [optimized text]
-3. [BENEFIT HEADER] — [optimized text]
-4. [BENEFIT HEADER] — [optimized text]
-5. [BENEFIT HEADER] — [optimized text]
+1. [optimized factual bullet]
+2. [optimized factual bullet]
+3. [optimized factual bullet]
+4. [optional optimized factual bullet]
+5. [optional optimized factual bullet]
 
 ## Description
 [optimized description — copy this directly into Seller Central]
@@ -350,31 +394,51 @@ The primary deliverable is always a **ready-to-use listing** that the seller can
 
 | Dimension | Before | After | Key Change |
 |-----------|--------|-------|-----------|
-| Title | /15 | /15 | [what changed] |
-| Bullet Points | /15 | /15 | [what changed] |
-| Images | /15 | — | [recommendation only] |
+| Main Title Compliance | /15 | /15 | [limit, claim, repetition, keyword stuffing, no-brand naming fixes] |
+| Product Highlights | /10 | /10 | [125-character phrase field, old-title facts preserved, claim wording corrected] |
+| Bullet Compliance | /15 | /15 | [count, length, factuality, prohibited-content fixes] |
+| Images | /10 | — | [recommendation only] |
 | A+ Content | /10 | — | [recommendation only] |
 | Description | /10 | /10 | [what changed] |
 | Pricing | /10 | — | [observation] |
-| Reviews | /15 | — | [observation] |
+| Reviews | /10 | — | [observation] |
 | SEO Coverage | /10 | /10 | [what changed] |
 
 ## Keyword Coverage: [X]% → [Y]%
 
 | Keyword | Before | After | Where Added |
 |---------|--------|-------|-------------|
-| [kw] | ❌ | ✅ | Title + Bullet 2 |
-| [kw] | ✅ Title only | ✅ Title + Bullets | Bullet 4 |
+| [kw] | ❌ | ✅ | Main Title + Bullet 2 |
+| [kw] | ✅ Main Title only | ✅ Main Title + Bullets | Bullet 4 |
 
 ## What Changed (Before → After)
 
-**Title:**
+**Main Title:**
 > ❌ [original]
 > ✅ [optimized]
+
+**Product Highlights:**
+> ❌ [missing, overloaded in old title, too long, or sentence/list format]
+> ✅ [one comma-separated phrase line under 125 characters]
 
 **Bullets:**
 > ❌ 1. [original]
 > ✅ 1. [optimized — added: +[kw1], +[kw2]]
+
+## Compliance Check: Main Title + Product Highlights + Bullet Points
+
+| Field | Before | After | Result |
+|-------|--------|-------|--------|
+| Main title length | [X]/[limit] | [Y]/[limit] | Pass/Fail |
+| Main title claims and prohibited content | [issue] | [fix] | Pass/Fail |
+| Main title repetition / keyword stuffing / no-brand naming | [issue] | [fix] | Pass/Fail |
+| Product highlights format | [issue] | [comma-separated phrases, no numbering, no sentences] | Pass/Fail |
+| Product highlights length | [X]/125 | [Y]/125 | Pass/Fail |
+| Product highlights completeness | [missing facts] | [preserved facts] | Pass/Fail |
+| Product highlights claim wording | [issue] | [fix] | Pass/Fail |
+| Product highlights independence from bullets | [issue] | [fix] | Pass/Fail |
+| Bullet count and length | [issue] | [fix] | Pass/Fail |
+| Bullet factuality and prohibited content | [issue] | [fix] | Pass/Fail |
 
 ## 🔴 Issues Fixed
 1. [what was wrong → how we fixed it]
@@ -391,7 +455,8 @@ The primary deliverable is always a **ready-to-use listing** that the seller can
 ```
 | Dimension | Your Listing | Competitor 1 | Competitor 2 | Competitor 3 |
 |-----------|-------------|-------------|-------------|-------------|
-| Title score | /15 | /15 | /15 | /15 |
+| Main Title score | /15 | /15 | /15 | /15 |
+| Product Highlights score | /10 | /10 | /10 | /10 |
 | Bullets score | /15 | /15 | /15 | /15 |
 | Images | [count] | [count] | [count] | [count] |
 | A+ Content | Yes/No | Yes/No | Yes/No | Yes/No |
